@@ -164,6 +164,36 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
+}
+
+.topbar-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  min-width: 0;
+}
+
+.topbar-slogan, .topbar-contact {
+  color: #2563eb;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.topbar-contact {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.topbar-contact:hover { opacity: 0.75; }
+
+.topbar-slogan .diamond {
+  font-size: 10px;
+  margin: 0 7px;
 }
 
 .topbar-brand {
@@ -1265,6 +1295,18 @@ a {
   font-family: var(--font-mono);
 }
 
+@media (max-width: 900px) {
+  .topbar-inner { gap: 10px; padding: 10px 14px; }
+  .topbar-center { gap: 12px; }
+  .topbar-slogan, .topbar-contact, .topbar-link { font-size: 10px; }
+  .topbar-slogan .diamond { margin: 0 3px; }
+}
+
+@media (max-width: 700px) {
+  .topbar-center { flex-direction: column; gap: 2px; align-items: flex-start; }
+  .topbar-contact { max-width: 240px; overflow: hidden; text-overflow: ellipsis; }
+}
+
 @media (min-width: 640px) {
   .footer-bottom {
     flex-direction: row;
@@ -1621,6 +1663,10 @@ html, body {
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
         <span class="brand-text">Java <span style="color:#f59e0b">Torréfié</span></span>
         <span class="brand-author">· Baba Niang</span>
+      </div>
+      <div class="topbar-center">
+        <div class="topbar-slogan"><span class="diamond">◆</span> La constance bat le talent ! <span class="diamond">◆</span></div>
+        <a class="topbar-contact" href="mailto:baba.niang.isep@gmail.com">Contact : baba.niang.isep@gmail.com</a>
       </div>
       <div class="topbar-actions">
         <a href="https://baba-niang.github.io/Guide-Git-Github/" target="_blank" rel="noopener noreferrer" class="topbar-link">
@@ -4075,13 +4121,13 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
 Les méthodes essentielles pour contrôler du texte et convertir des valeurs en Java.
 
 ### Notions incluses
-- `.equals()`
-- `.equalsIgnoreCase()`
-- `.isEmpty()` / `.isBlank()`
-- `.contains()`
-- `.startsWith()` / `.endsWith()`
-- `parseInt()` / `parseDouble()`
-- `String.valueOf()`" style="--heading-color:#0ea5e9"></div>
+- `.equals()` → Compare le contenu de deux chaînes.
+- `.equalsIgnoreCase()` → Compare sans tenir compte des majuscules/minuscules.
+- `.isEmpty()` / `.isBlank()` → Vérifie si une chaîne est vide ou blanche.
+- `.contains()` → Vérifie si un texte contient une autre chaîne.
+- `.startsWith()` / `.endsWith()` → Vérifie le début ou la fin d’une chaîne.
+- `parseInt()` / `parseDouble()` → Convertit un texte en nombre.
+- `String.valueOf()` → Convertit une valeur en `String`." style="--heading-color:#0ea5e9"></div>
             </div>
           </div>
         </article>
