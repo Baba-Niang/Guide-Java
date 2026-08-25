@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Java Torréfié · 60 Fiches Récapitulatives par Baba Niang</title>
-  <meta name="description" content="Un parcours commenté de 60 fiches Java, organisé en 10 chapitres thématiques. Thème torréfaction & café.">
+  <meta name="description" content="Un parcours commenté de 62 fiches Java, organisé en 11 chapitres thématiques. Thème torréfaction & café.">
   <meta name="keywords" content="Java, Baba Niang, fiches Java, apprentissage Java, POO, JVM, JRE, JDK">
   <meta name="author" content="Baba Niang">
   
   <!-- Open Graph -->
   <meta property="og:title" content="Java Torréfié · 60 Fiches Récapitulatives">
-  <meta property="og:description" content="Un parcours commenté de 60 fiches Java, du grain brut à l'extraction finale.">
+  <meta property="og:description" content="Un parcours commenté de 62 fiches Java, du grain brut à l'extraction finale.">
   <meta property="og:type" content="website">
   
   <!-- Google Fonts -->
@@ -1647,14 +1647,14 @@ html, body {
           <div class="hero-particles" id="particles"></div>
           <div class="hero-content">
             <div class="hero-badge">
-              ✨ <span>60 FICHES · 10 CHAPITRES · CAFÉINÉ</span>
+              ✨ <span>62 FICHES · 11 CHAPITRES · CAFÉINÉ</span>
             </div>
             <h1 class="hero-title">
               <span class="title-line-1">JAVA</span>
               <span class="title-line-2">TORRÉFIÉ</span>
             </h1>
             <p class="hero-subtitle">
-              Un parcours commenté de <strong style="color:#f59e0b">60 fiches</strong> Java,
+              Un parcours commenté de <strong style="color:#f59e0b">62 fiches</strong> Java,
               du <em>grain brut</em> à l'<em>extraction finale</em>.
             </p>
             <p class="hero-author">
@@ -1704,34 +1704,39 @@ html, body {
       <span class="legend-num">04</span>
       <span class="legend-label">Commentaires,</span>
     </a>
+    <a href="#exceptions" class="legend-chip" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08" onclick="scrollToChapter('exceptions');return false;">
+      <span class="legend-dot" style="background-color:#7c3aed"></span>
+      <span class="legend-num">05</span>
+      <span class="legend-label">Exceptions</span>
+    </a>
     <a href="#operateurs" class="legend-chip" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908" onclick="scrollToChapter('operateurs');return false;">
       <span class="legend-dot" style="background-color:#ec4899"></span>
-      <span class="legend-num">05</span>
+      <span class="legend-num">06</span>
       <span class="legend-label">Opérateurs</span>
     </a>
     <a href="#conditions" class="legend-chip" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608" onclick="scrollToChapter('conditions');return false;">
       <span class="legend-dot" style="background-color:#84cc16"></span>
-      <span class="legend-num">06</span>
+      <span class="legend-num">07</span>
       <span class="legend-label">Structures</span>
     </a>
     <a href="#boucles" class="legend-chip" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708" onclick="scrollToChapter('boucles');return false;">
       <span class="legend-dot" style="background-color:#a855f7"></span>
-      <span class="legend-num">07</span>
+      <span class="legend-num">08</span>
       <span class="legend-label">Boucles</span>
     </a>
     <a href="#tableaux" class="legend-chip" style="color:#d97706;border-color:#d9770640;background-color:#d9770608" onclick="scrollToChapter('tableaux');return false;">
       <span class="legend-dot" style="background-color:#d97706"></span>
-      <span class="legend-num">08</span>
+      <span class="legend-num">09</span>
       <span class="legend-label">Tableaux</span>
     </a>
     <a href="#poo-fondamentaux" class="legend-chip" style="color:#059669;border-color:#05966940;background-color:#05966908" onclick="scrollToChapter('poo-fondamentaux');return false;">
       <span class="legend-dot" style="background-color:#059669"></span>
-      <span class="legend-num">09</span>
+      <span class="legend-num">10</span>
       <span class="legend-label">POO</span>
     </a>
     <a href="#poo-avance" class="legend-chip" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708" onclick="scrollToChapter('poo-avance');return false;">
       <span class="legend-dot" style="background-color:#0284c7"></span>
-      <span class="legend-num">10</span>
+      <span class="legend-num">11</span>
       <span class="legend-label">POO</span>
     </a></div>
           </div>
@@ -1745,7 +1750,7 @@ html, body {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -1784,14 +1789,24 @@ html, body {
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -1801,7 +1816,7 @@ html, body {
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -1811,7 +1826,7 @@ html, body {
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -1821,7 +1836,7 @@ html, body {
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -1831,7 +1846,7 @@ html, body {
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -1841,7 +1856,7 @@ html, body {
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -2431,7 +2446,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -2470,14 +2485,24 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -2487,7 +2512,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -2497,7 +2522,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -2507,7 +2532,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -2517,7 +2542,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -2527,7 +2552,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -2766,7 +2791,7 @@ La structure est toujours la même, seul le contenu change !
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -2805,14 +2830,24 @@ La structure est toujours la même, seul le contenu change !
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -2822,7 +2857,7 @@ La structure est toujours la même, seul le contenu change !
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -2832,7 +2867,7 @@ La structure est toujours la même, seul le contenu change !
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -2842,7 +2877,7 @@ La structure est toujours la même, seul le contenu change !
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -2852,7 +2887,7 @@ La structure est toujours la même, seul le contenu change !
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -2862,7 +2897,7 @@ La structure est toujours la même, seul le contenu change !
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -3428,7 +3463,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -3467,14 +3502,24 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -3484,7 +3529,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -3494,7 +3539,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -3504,7 +3549,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -3514,7 +3559,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -3524,7 +3569,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -3996,19 +4041,63 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
 * Utiliser **nextInt()** pour lire du texte." style="--heading-color:#0ea5e9"></div>
             </div>
           </div>
-        </article></div>
+        </article>        <article class="fiche-card" data-fiche-id="61" style="--accent:#0ea5e9" data-index="3">
+          <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#0ea5e9,#0ea5e988)"></div>
+          <button class="fiche-header" onclick="toggleFiche(this)" aria-expanded="false">
+            <div class="fiche-badge" style="background-color:#0ea5e915;border-color:#0ea5e940;color:#0ea5e9">
+              <span class="badge-label">Fiche</span>
+              <span class="badge-num">61</span>
+            </div>
+            <div class="fiche-info">
+              <h3 class="fiche-title" style="color:#0ea5e9">Méthodes String & Conversions</h3>
+              <p class="fiche-subtitle">Les expressions essentielles pour manipuler et convertir les données</p>
+              <p class="fiche-intro">7 notions essentielles + fiches visuelles détaillées et synthèse</p>
+              <div class="fiche-stats"><span class="stat-badge" style="color:#0ea5e9;background:#0ea5e91a;border-color:#0ea5e940">🖼 9 visuels</span><span class="stat-badge" style="color:#0ea5e9;background:#0ea5e91a;border-color:#0ea5e940">🔤 String</span><span class="stat-badge" style="color:#0ea5e9;background:#0ea5e91a;border-color:#0ea5e940">🔄 Conversion</span></div>
+            </div>
+            <svg class="fiche-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="fiche-content" style="display:none">
+            <div class="fiche-content-inner">
+              <div class="fiche-toolbar">
+                <h4 class="toolbar-title" style="color:#0ea5e9">☕ Fiches visuelles — String & conversions</h4>
+                <button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#0ea5e9;border-color:#0ea5e940">🖼 Masquer les fiches</button>
+              </div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/1A.png" alt="Méthodes String et conversions — #1A.png" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/1C.png" alt="Méthodes String et conversions — #1C.png" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/2.png" alt="Méthodes String et conversions — #2.png" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/3.png" alt="Méthodes String et conversions — #3.png" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/4.png" alt="Méthodes String et conversions — #4.png" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/5.png" alt="Méthodes String et conversions — #5.png" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/6.png" alt="Méthodes String et conversions — #6.png" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/methodes-string-conversion/7.png" alt="Méthodes String et conversions — #7.png" loading="lazy" /></div>
+              <div class="fiche-markdown" data-content-raw="# ⭐ Baba Niang ⭐
+## MÉTHODES STRING &amp; CONVERSIONS
+Les méthodes essentielles pour contrôler du texte et convertir des valeurs en Java.
+
+### Notions incluses
+- `.equals()`
+- `.equalsIgnoreCase()`
+- `.isEmpty()` / `.isBlank()`
+- `.contains()`
+- `.startsWith()` / `.endsWith()`
+- `parseInt()` / `parseDouble()`
+- `String.valueOf()`" style="--heading-color:#0ea5e9"></div>
+            </div>
+          </div>
+        </article>
+</div>
     </section>
     
         </div>
       </section>
-      <section class="slide slide-chapter" id="slide-operateurs" data-slide-index="5" data-chapter-id="operateurs">
+            <section class="slide slide-chapter" id="slide-exceptions" data-slide-index="5" data-chapter-id="exceptions">
         <aside class="sidebar">
           <nav>
             <div class="sidebar-brand">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -4047,14 +4136,24 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -4064,7 +4163,7 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -4074,7 +4173,7 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -4084,7 +4183,7 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -4094,7 +4193,7 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -4104,7 +4203,211 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">POO — Avancé</div>
+          <div class="sidebar-count">10 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0284c7"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li></ul>
+            <div class="sidebar-footer">
+              ← → pour naviguer<br>
+              Clique une fiche pour la déplier.
+            </div>
+          </nav>
+        </aside>
+        <div class="chapters-wrap">
+          <section id="exceptions" class="chapter-section" style="--accent:#7c3aed">
+            <div class="chapter-header">
+              <div class="chapter-line" style="background:linear-gradient(to right,transparent,#7c3aed80,transparent)"></div>
+              <div class="chapter-header-inner">
+                <div class="chapter-num" style="color:#7c3aed;text-shadow:0 0 30px #7c3aed40">05</div>
+                <div class="chapter-meta">
+                  <div class="chapter-badge-row">
+                    <span class="chapter-badge" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed10">Chapitre 05</span>
+                    <span class="chapter-count">1 fiche</span>
+                  </div>
+                  <h2 class="chapter-title" style="color:#7c3aed">Exceptions & Gestion des erreurs</h2>
+                  <p class="chapter-subtitle">Comprendre les erreurs, les intercepter et sécuriser les saisies</p>
+                </div>
+              </div>
+              <div class="chapter-gradient-bar" style="background:linear-gradient(to right,#7c3aed,#7c3aed40 30%,transparent)"></div>
+            </div>
+            <div class="fiches-list">
+        <article class="fiche-card" data-fiche-id="62" style="--accent:#7c3aed" data-index="0">
+          <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
+          <button class="fiche-header" onclick="toggleFiche(this)" aria-expanded="false">
+            <div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed">
+              <span class="badge-label">Fiche</span>
+              <span class="badge-num">62</span>
+            </div>
+            <div class="fiche-info">
+              <h3 class="fiche-title" style="color:#7c3aed">Exceptions Java — Série complète</h3>
+              <p class="fiche-subtitle">Comprendre et gérer les erreurs d'exécution</p>
+              <p class="fiche-intro">13 fiches visuelles : de Exception à la synthèse saisie + exceptions</p>
+              <div class="fiche-stats"><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">🖼 13 fiches visuelles</span><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">⚠ Exceptions</span><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">🧠 Synthèse</span></div>
+            </div>
+            <svg class="fiche-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="fiche-content" style="display:none">
+            <div class="fiche-content-inner">
+              <div class="fiche-toolbar">
+                <h4 class="toolbar-title" style="color:#7c3aed">☕ Fiches visuelles — Exceptions Java</h4>
+                <button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#7c3aed;border-color:#7c3aed40">🖼 Masquer les fiches</button>
+              </div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/1.png" alt="Fiche Exceptions Java 1" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/2.png" alt="Fiche Exceptions Java 2" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/3.png" alt="Fiche Exceptions Java 3" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/4.png" alt="Fiche Exceptions Java 4" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/5.png" alt="Fiche Exceptions Java 5" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/6.png" alt="Fiche Exceptions Java 6" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/7.png" alt="Fiche Exceptions Java 7" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/8.png" alt="Fiche Exceptions Java 8" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/9.png" alt="Fiche Exceptions Java 9" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/10.png" alt="Fiche Exceptions Java 10" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/11.png" alt="Fiche Exceptions Java 11" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/12.png" alt="Fiche Exceptions Java 12" loading="lazy" /></div>
+              <div class="fiche-image-wrap"><img src="fiches/exceptions/13.png" alt="Fiche Exceptions Java 13" loading="lazy" /></div>
+              <div class="fiche-markdown" data-content-raw="# ⭐ Baba Niang ⭐
+## EXCEPTIONS JAVA
+Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptions.
+
+### Fiches incluses
+- `Exception`
+- `try / catch`
+- `finally`
+- `throw`
+- `throws`
+- `InputMismatchException`
+- `NumberFormatException`
+- `ArithmeticException`
+- `NullPointerException`
+- `ArrayIndexOutOfBoundsException`
+- `NoSuchElementException`
+- `IllegalArgumentException`
+- Synthèse pratique : saisie + exceptions" style="--heading-color:#7c3aed"></div>
+            </div>
+          </div>
+        </article>
+            </div>
+          </section>
+        </div>
+      </section>
+<section class="slide slide-chapter" id="slide-operateurs" data-slide-index="6" data-chapter-id="operateurs">
+        <aside class="sidebar">
+          <nav>
+            <div class="sidebar-brand">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+              <div>
+                <div class="sidebar-brand-text">Java Torréfié</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
+              </div>
+            </div>
+            <ul class="sidebar-list">
+    <li>
+      <a href="#fondations" class="sidebar-item" data-chapter="fondations" style="--accent:#f59e0b">
+        <span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">01</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Fondations & Environnement</div>
+          <div class="sidebar-count">6 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#f59e0b"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#premier-programme" class="sidebar-item" data-chapter="premier-programme" style="--accent:#ea580c">
+        <span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">02</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Premier Programme & Structure</div>
+          <div class="sidebar-count">2 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#ea580c"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#variables-types" class="sidebar-item" data-chapter="variables-types" style="--accent:#10b981">
+        <span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">03</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Variables & Types</div>
+          <div class="sidebar-count">4 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#10b981"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#commentaires-strings" class="sidebar-item" data-chapter="commentaires-strings" style="--accent:#0ea5e9">
+        <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Commentaires, Strings & Saisie</div>
+          <div class="sidebar-count">4 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Opérateurs</div>
+          <div class="sidebar-count">7 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#ec4899"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Structures Conditionnelles</div>
+          <div class="sidebar-count">6 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#84cc16"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Boucles</div>
+          <div class="sidebar-count">8 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#a855f7"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Tableaux</div>
+          <div class="sidebar-count">8 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#d97706"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">POO — Fondamentaux</div>
+          <div class="sidebar-count">8 fiches</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#059669"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -4123,10 +4426,10 @@ Ferme toujours le **Scanner** avec `sc.close()` à la fin du programme.
       <div class="chapter-header">
         <div class="chapter-line" style="background:linear-gradient(to right,transparent,#ec489980,transparent)"></div>
         <div class="chapter-header-inner">
-          <div class="chapter-num" style="color:#ec4899;text-shadow:0 0 30px #ec489940">05</div>
+          <div class="chapter-num" style="color:#ec4899;text-shadow:0 0 30px #ec489940">06</div>
           <div class="chapter-meta">
             <div class="chapter-badge-row">
-              <span class="chapter-badge" style="color:#ec4899;border-color:#ec489940;background-color:#ec489910">Chapitre 05</span>
+              <span class="chapter-badge" style="color:#ec4899;border-color:#ec489940;background-color:#ec489910">Chapitre 06</span>
               <span class="chapter-count">7 fiches</span>
             </div>
             <h2 class="chapter-title" style="color:#ec4899">Opérateurs</h2>
@@ -4915,14 +5218,14 @@ System.out.println(ok);                     // true
     
         </div>
       </section>
-      <section class="slide slide-chapter" id="slide-conditions" data-slide-index="6" data-chapter-id="conditions">
+      <section class="slide slide-chapter" id="slide-conditions" data-slide-index="7" data-chapter-id="conditions">
         <aside class="sidebar">
           <nav>
             <div class="sidebar-brand">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -4961,14 +5264,24 @@ System.out.println(ok);                     // true
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -4978,7 +5291,7 @@ System.out.println(ok);                     // true
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -4988,7 +5301,7 @@ System.out.println(ok);                     // true
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -4998,7 +5311,7 @@ System.out.println(ok);                     // true
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -5008,7 +5321,7 @@ System.out.println(ok);                     // true
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -5018,7 +5331,7 @@ System.out.println(ok);                     // true
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -5037,10 +5350,10 @@ System.out.println(ok);                     // true
       <div class="chapter-header">
         <div class="chapter-line" style="background:linear-gradient(to right,transparent,#84cc1680,transparent)"></div>
         <div class="chapter-header-inner">
-          <div class="chapter-num" style="color:#84cc16;text-shadow:0 0 30px #84cc1640">06</div>
+          <div class="chapter-num" style="color:#84cc16;text-shadow:0 0 30px #84cc1640">07</div>
           <div class="chapter-meta">
             <div class="chapter-badge-row">
-              <span class="chapter-badge" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1610">Chapitre 06</span>
+              <span class="chapter-badge" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1610">Chapitre 07</span>
               <span class="chapter-count">6 fiches</span>
             </div>
             <h2 class="chapter-title" style="color:#84cc16">Structures Conditionnelles</h2>
@@ -5814,14 +6127,14 @@ dès que possible !" style="--heading-color:#84cc16"></div>
     
         </div>
       </section>
-      <section class="slide slide-chapter" id="slide-boucles" data-slide-index="7" data-chapter-id="boucles">
+      <section class="slide slide-chapter" id="slide-boucles" data-slide-index="8" data-chapter-id="boucles">
         <aside class="sidebar">
           <nav>
             <div class="sidebar-brand">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -5860,14 +6173,24 @@ dès que possible !" style="--heading-color:#84cc16"></div>
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -5877,7 +6200,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -5887,7 +6210,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -5897,7 +6220,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -5907,7 +6230,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -5917,7 +6240,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -5936,10 +6259,10 @@ dès que possible !" style="--heading-color:#84cc16"></div>
       <div class="chapter-header">
         <div class="chapter-line" style="background:linear-gradient(to right,transparent,#a855f780,transparent)"></div>
         <div class="chapter-header-inner">
-          <div class="chapter-num" style="color:#a855f7;text-shadow:0 0 30px #a855f740">07</div>
+          <div class="chapter-num" style="color:#a855f7;text-shadow:0 0 30px #a855f740">08</div>
           <div class="chapter-meta">
             <div class="chapter-badge-row">
-              <span class="chapter-badge" style="color:#a855f7;border-color:#a855f740;background-color:#a855f710">Chapitre 07</span>
+              <span class="chapter-badge" style="color:#a855f7;border-color:#a855f740;background-color:#a855f710">Chapitre 08</span>
               <span class="chapter-count">8 fiches</span>
             </div>
             <h2 class="chapter-title" style="color:#a855f7">Boucles</h2>
@@ -7117,14 +7440,14 @@ Au revoir !
     
         </div>
       </section>
-      <section class="slide slide-chapter" id="slide-tableaux" data-slide-index="8" data-chapter-id="tableaux">
+      <section class="slide slide-chapter" id="slide-tableaux" data-slide-index="9" data-chapter-id="tableaux">
         <aside class="sidebar">
           <nav>
             <div class="sidebar-brand">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -7163,14 +7486,24 @@ Au revoir !
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -7180,7 +7513,7 @@ Au revoir !
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -7190,7 +7523,7 @@ Au revoir !
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -7200,7 +7533,7 @@ Au revoir !
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -7210,7 +7543,7 @@ Au revoir !
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -7220,7 +7553,7 @@ Au revoir !
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -7239,10 +7572,10 @@ Au revoir !
       <div class="chapter-header">
         <div class="chapter-line" style="background:linear-gradient(to right,transparent,#d9770680,transparent)"></div>
         <div class="chapter-header-inner">
-          <div class="chapter-num" style="color:#d97706;text-shadow:0 0 30px #d9770640">08</div>
+          <div class="chapter-num" style="color:#d97706;text-shadow:0 0 30px #d9770640">09</div>
           <div class="chapter-meta">
             <div class="chapter-badge-row">
-              <span class="chapter-badge" style="color:#d97706;border-color:#d9770640;background-color:#d9770610">Chapitre 08</span>
+              <span class="chapter-badge" style="color:#d97706;border-color:#d9770640;background-color:#d9770610">Chapitre 09</span>
               <span class="chapter-count">8 fiches</span>
             </div>
             <h2 class="chapter-title" style="color:#d97706">Tableaux</h2>
@@ -8183,14 +8516,14 @@ for (int i = 0; i &lt; m.length; i++) {
     
         </div>
       </section>
-      <section class="slide slide-chapter" id="slide-poo-fondamentaux" data-slide-index="9" data-chapter-id="poo-fondamentaux">
+      <section class="slide slide-chapter" id="slide-poo-fondamentaux" data-slide-index="10" data-chapter-id="poo-fondamentaux">
         <aside class="sidebar">
           <nav>
             <div class="sidebar-brand">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -8229,14 +8562,24 @@ for (int i = 0; i &lt; m.length; i++) {
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -8246,7 +8589,7 @@ for (int i = 0; i &lt; m.length; i++) {
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -8256,7 +8599,7 @@ for (int i = 0; i &lt; m.length; i++) {
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -8266,7 +8609,7 @@ for (int i = 0; i &lt; m.length; i++) {
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -8276,7 +8619,7 @@ for (int i = 0; i &lt; m.length; i++) {
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -8286,7 +8629,7 @@ for (int i = 0; i &lt; m.length; i++) {
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -8305,10 +8648,10 @@ for (int i = 0; i &lt; m.length; i++) {
       <div class="chapter-header">
         <div class="chapter-line" style="background:linear-gradient(to right,transparent,#05966980,transparent)"></div>
         <div class="chapter-header-inner">
-          <div class="chapter-num" style="color:#059669;text-shadow:0 0 30px #05966940">09</div>
+          <div class="chapter-num" style="color:#059669;text-shadow:0 0 30px #05966940">10</div>
           <div class="chapter-meta">
             <div class="chapter-badge-row">
-              <span class="chapter-badge" style="color:#059669;border-color:#05966940;background-color:#05966910">Chapitre 09</span>
+              <span class="chapter-badge" style="color:#059669;border-color:#05966940;background-color:#05966910">Chapitre 10</span>
               <span class="chapter-count">8 fiches</span>
             </div>
             <h2 class="chapter-title" style="color:#059669">POO — Fondamentaux</h2>
@@ -9149,14 +9492,14 @@ class Test extends Utilitaire {
     
         </div>
       </section>
-      <section class="slide slide-chapter" id="slide-poo-avance" data-slide-index="10" data-chapter-id="poo-avance">
+      <section class="slide slide-chapter" id="slide-poo-avance" data-slide-index="11" data-chapter-id="poo-avance">
         <aside class="sidebar">
           <nav>
             <div class="sidebar-brand">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
               <div>
                 <div class="sidebar-brand-text">Java Torréfié</div>
-                <div class="sidebar-brand-sub">60 · 10 ch.</div>
+                <div class="sidebar-brand-sub">62 · 11 ch.</div>
               </div>
             </div>
             <ul class="sidebar-list">
@@ -9195,14 +9538,24 @@ class Test extends Utilitaire {
         <span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Commentaires, Strings & Saisie</div>
-          <div class="sidebar-count">3 fiches</div>
+          <div class="sidebar-count">4 fiches</div>
         </div>
         <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#0ea5e9"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </li>
     <li>
+      <a href="#exceptions" class="sidebar-item" data-chapter="exceptions" style="--accent:#7c3aed">
+        <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+        <div class="sidebar-text">
+          <div class="sidebar-title">Exceptions & Gestion des erreurs</div>
+          <div class="sidebar-count">1 fiche</div>
+        </div>
+        <svg class="sidebar-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#7c3aed"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    </li>
+    <li>
       <a href="#operateurs" class="sidebar-item" data-chapter="operateurs" style="--accent:#ec4899">
-        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">05</span>
+        <span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Opérateurs</div>
           <div class="sidebar-count">7 fiches</div>
@@ -9212,7 +9565,7 @@ class Test extends Utilitaire {
     </li>
     <li>
       <a href="#conditions" class="sidebar-item" data-chapter="conditions" style="--accent:#84cc16">
-        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">06</span>
+        <span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Structures Conditionnelles</div>
           <div class="sidebar-count">6 fiches</div>
@@ -9222,7 +9575,7 @@ class Test extends Utilitaire {
     </li>
     <li>
       <a href="#boucles" class="sidebar-item" data-chapter="boucles" style="--accent:#a855f7">
-        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">07</span>
+        <span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Boucles</div>
           <div class="sidebar-count">8 fiches</div>
@@ -9232,7 +9585,7 @@ class Test extends Utilitaire {
     </li>
     <li>
       <a href="#tableaux" class="sidebar-item" data-chapter="tableaux" style="--accent:#d97706">
-        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">08</span>
+        <span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
         <div class="sidebar-text">
           <div class="sidebar-title">Tableaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -9242,7 +9595,7 @@ class Test extends Utilitaire {
     </li>
     <li>
       <a href="#poo-fondamentaux" class="sidebar-item" data-chapter="poo-fondamentaux" style="--accent:#059669">
-        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">09</span>
+        <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Fondamentaux</div>
           <div class="sidebar-count">8 fiches</div>
@@ -9252,7 +9605,7 @@ class Test extends Utilitaire {
     </li>
     <li>
       <a href="#poo-avance" class="sidebar-item" data-chapter="poo-avance" style="--accent:#0284c7">
-        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">10</span>
+        <span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
         <div class="sidebar-text">
           <div class="sidebar-title">POO — Avancé</div>
           <div class="sidebar-count">10 fiches</div>
@@ -9271,10 +9624,10 @@ class Test extends Utilitaire {
       <div class="chapter-header">
         <div class="chapter-line" style="background:linear-gradient(to right,transparent,#0284c780,transparent)"></div>
         <div class="chapter-header-inner">
-          <div class="chapter-num" style="color:#0284c7;text-shadow:0 0 30px #0284c740">10</div>
+          <div class="chapter-num" style="color:#0284c7;text-shadow:0 0 30px #0284c740">11</div>
           <div class="chapter-meta">
             <div class="chapter-badge-row">
-              <span class="chapter-badge" style="color:#0284c7;border-color:#0284c740;background-color:#0284c710">Chapitre 10</span>
+              <span class="chapter-badge" style="color:#0284c7;border-color:#0284c740;background-color:#0284c710">Chapitre 11</span>
               <span class="chapter-count">10 fiches</span>
             </div>
             <h2 class="chapter-title" style="color:#0284c7">POO — Avancé</h2>
@@ -10566,18 +10919,18 @@ public class Main {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
             <span>Java <span style="color:#f59e0b">Torréfié</span></span>
           </div>
-          <p class="footer-desc">60 fiches Java organisées en 10 chapitres thématiques, avec un thème visuel inspiré de la torréfaction du café — clin d'œil à l'origine de Java.</p>
+          <p class="footer-desc">62 fiches Java organisées en 11 chapitres thématiques, avec un thème visuel inspiré de la torréfaction du café — clin d'œil à l'origine de Java.</p>
         </div>
         <div class="footer-col">
           <h4 class="footer-heading">Chapitres</h4>
           <ul class="footer-links">
-            <li><a href="#fondations"><span class="footer-num" style="color:#f59e0b">01</span>Fondations & Environnement</a></li><li><a href="#premier-programme"><span class="footer-num" style="color:#ea580c">02</span>Premier Programme & Structure</a></li><li><a href="#variables-types"><span class="footer-num" style="color:#10b981">03</span>Variables & Types</a></li><li><a href="#commentaires-strings"><span class="footer-num" style="color:#0ea5e9">04</span>Commentaires, Strings & Saisie</a></li><li><a href="#operateurs"><span class="footer-num" style="color:#ec4899">05</span>Opérateurs</a></li>
+            <li><a href="#fondations"><span class="footer-num" style="color:#f59e0b">01</span>Fondations & Environnement</a></li><li><a href="#premier-programme"><span class="footer-num" style="color:#ea580c">02</span>Premier Programme & Structure</a></li><li><a href="#variables-types"><span class="footer-num" style="color:#10b981">03</span>Variables & Types</a></li><li><a href="#commentaires-strings"><span class="footer-num" style="color:#0ea5e9">04</span>Commentaires, Strings & Saisie</a></li><li><a href="#exceptions"><span class="footer-num" style="color:#7c3aed">05</span>Exceptions & Gestion des erreurs</a></li><li><a href="#operateurs"><span class="footer-num" style="color:#ec4899">06</span>Opérateurs</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4 class="footer-heading">Suite</h4>
           <ul class="footer-links">
-            <li><a href="#conditions"><span class="footer-num" style="color:#84cc16">06</span>Structures Conditionnelles</a></li><li><a href="#boucles"><span class="footer-num" style="color:#a855f7">07</span>Boucles</a></li><li><a href="#tableaux"><span class="footer-num" style="color:#d97706">08</span>Tableaux</a></li><li><a href="#poo-fondamentaux"><span class="footer-num" style="color:#059669">09</span>POO — Fondamentaux</a></li><li><a href="#poo-avance"><span class="footer-num" style="color:#0284c7">10</span>POO — Avancé</a></li>
+            <li><a href="#conditions"><span class="footer-num" style="color:#84cc16">07</span>Structures Conditionnelles</a></li><li><a href="#boucles"><span class="footer-num" style="color:#a855f7">08</span>Boucles</a></li><li><a href="#tableaux"><span class="footer-num" style="color:#d97706">09</span>Tableaux</a></li><li><a href="#poo-fondamentaux"><span class="footer-num" style="color:#059669">10</span>POO — Fondamentaux</a></li><li><a href="#poo-avance"><span class="footer-num" style="color:#0284c7">11</span>POO — Avancé</a></li>
           </ul>
         </div>
       </div>
@@ -10839,7 +11192,7 @@ function scrollToChapter(id) {
   }
 }
 
-var CHAPTERS_IDS = ['fondations', 'premier-programme', 'variables-types', 'commentaires-strings', 'operateurs', 'conditions', 'boucles', 'tableaux', 'poo-fondamentaux', 'poo-avance'];
+var CHAPTERS_IDS = ['fondations', 'premier-programme', 'variables-types', 'commentaires-strings', 'exceptions', 'operateurs', 'conditions', 'boucles', 'tableaux', 'poo-fondamentaux', 'poo-avance'];
 
 // === SCROLL TO TOP (go to first slide) ===
 function scrollToTop() {
@@ -11052,7 +11405,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setupWheelNav();
   
   console.log('☕ Java Torréfié — site chargé avec succès');
-  console.log('📖 60 fiches · 10 chapitres · Baba Niang');
+  console.log('📖 62 fiches · 11 chapitres · Baba Niang');
   console.log('⌨️  Utilise ← → pour naviguer entre les chapitres');
 });
 
