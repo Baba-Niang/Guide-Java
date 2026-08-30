@@ -232,6 +232,91 @@ a {
 }
 
 .gmail-contact{width:46px;height:46px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;text-decoration:none;transition:transform .2s ease,filter .2s ease}.gmail-contact:hover{transform:translateY(-1px) scale(1.04);filter:brightness(1.03)}.gmail-icon{width:46px;height:46px;display:block}
+
+/* === Groupe d'icônes technos + réseaux dans la topbar === */
+.topbar-tools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.topbar-tools-divider {
+  width: 1px;
+  height: 30px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.topbar-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.topbar-icon-item:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.topbar-icon-svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.topbar-icon-svg.icon-mono {
+  color: var(--fg);
+}
+
+.topbar-icon-label {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--fg-muted);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.topbar-uml-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+.topbar-uml-logo .uml-u { color: #4C7FDB; }
+.topbar-uml-logo .uml-m { color: #E0567A; }
+.topbar-uml-logo .uml-l { color: #A873E0; }
+
+:root[data-theme="light"] .topbar-uml-logo .uml-u { color: #2952A3; }
+:root[data-theme="light"] .topbar-uml-logo .uml-m { color: #A02B4E; }
+:root[data-theme="light"] .topbar-uml-logo .uml-l { color: #7439A8; }
+
+.topbar-linkedin-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: #0A66C2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
 /* === HERO === */
 .hero {
   position: relative;
@@ -434,7 +519,7 @@ a {
 .mobile-nav {
   display: none;
   position: sticky;
-  top: 57px;
+  top: var(--topbar-h, 57px);
   z-index: 50;
   backdrop-filter: blur(12px);
   background: var(--footer-bg);
@@ -495,7 +580,7 @@ a {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  height: calc(100vh - 57px);
+  height: calc(100vh - var(--topbar-h, 57px));
   scrollbar-width: thin;
 }
 
@@ -1301,23 +1386,38 @@ a {
   font-family: var(--font-mono);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .topbar-inner { gap: 10px; padding: 10px 14px; }
-  .topbar-center { gap: 12px; }
+  .topbar-center { gap: 10px; }
   .topbar-slogan, .topbar-contact, .topbar-link { font-size: 10px; }
   .topbar-slogan .diamond { margin: 0 3px; }
   .topbar-avatar { width: 26px; height: 26px; }
+  /* Le slogan cède la place au groupe d'icônes, qui devient prioritaire */
+  .topbar-slogan { display: none; }
+  .brand-author { display: none; }
+  .topbar-tools { gap: 8px; }
+  .topbar-icon-svg, .topbar-uml-logo, .topbar-linkedin-badge { width: 22px; height: 22px; }
+  .topbar-uml-logo { font-size: 11px; }
+  .topbar-linkedin-badge { font-size: 10px; }
+  .topbar-icon-label { font-size: 7.5px; }
+  .topbar-tools-divider { height: 22px; }
 }
 
 @media (max-width: 700px) {
   .topbar-center { flex-direction: column; gap: 4px; align-items: center; }
   .topbar-contact { max-width: 240px; overflow: hidden; text-overflow: ellipsis; }
+  .topbar-tools { flex-wrap: wrap; justify-content: center; gap: 8px 10px; max-width: 280px; }
+  .topbar-tools-divider { display: none; }
 }
 
 @media (max-width: 480px) {
   /* Évite le chevauchement du slogan avec le logo/avatar sur mobile */
   .topbar-slogan { display: none; }
   .brand-author { display: none; }
+  .topbar-icon-label { display: none; }
+  .topbar-icon-svg, .topbar-uml-logo, .topbar-linkedin-badge { width: 22px; height: 22px; }
+  .topbar-uml-logo { font-size: 11px; }
+  .topbar-linkedin-badge { font-size: 10px; }
 }
 
 @media (min-width: 640px) {
@@ -1530,6 +1630,50 @@ a {
   }
 }
 
+/* === Bouton "masquer/afficher les chapitres" dans la topbar === */
+.sidebar-toggle-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg-muted);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.sidebar-toggle-btn:hover {
+  color: var(--c-amber, #f59e0b);
+  border-color: var(--c-amber, #f59e0b);
+}
+
+body.sidebar-collapsed .sidebar-toggle-btn {
+  color: var(--c-amber, #f59e0b);
+  border-color: var(--c-amber, #f59e0b);
+  background: color-mix(in oklch, var(--c-amber, #f59e0b) 12%, transparent);
+}
+
+/* Le bouton n'a d'utilité que sur les slides de chapitre (sidebar visible dès 1024px) */
+@media (min-width: 1024px) {
+  .sidebar-toggle-btn {
+    display: flex;
+  }
+}
+
+/* Etat "replié" : on masque toutes les sidebars et le contenu reprend toute la largeur */
+body.sidebar-collapsed .sidebar {
+  display: none !important;
+}
+
+@media (min-width: 1024px) {
+  body.sidebar-collapsed .slide-chapter {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 .nav-arrow.next {
   right: 16px;
 }
@@ -1542,7 +1686,7 @@ a {
 /* === PROGRESS BAR (horizontal) === */
 .progress-bar {
   position: fixed;
-  top: 57px;
+  top: var(--topbar-h, 57px);
   left: 0;
   right: 0;
   height: 3px;
@@ -1720,12 +1864,42 @@ html, body {
 <div class="topbar-center">
 <img alt="Baba Niang" class="topbar-avatar" src="assets/baba-niang.jpg"/>
 <div class="topbar-slogan"><span class="diamond">◆</span> Discipline-Constance-Rigueur <span class="diamond">◆</span></div>
-<a aria-label="Envoyer un e-mail à Baba Niang" class="gmail-contact" href="mailto:baba.niang.isep@gmail.com" title="Envoyer un e-mail à Baba Niang"><svg aria-hidden="true" class="gmail-icon" role="img" viewbox="0 0 48 48"><circle cx="24" cy="24" fill="#ffffff" r="23"></circle><g transform="translate(6 6) scale(.75)"><path d="M10 16.5V32c0 1.66 1.34 3 3 3h3V21.4L24 28l8-6.6V35h3c1.66 0 3-1.34 3-3V16.5l-3.4-2.7L24 21.2l-10.6-7.4L10 16.5Z" fill="#EA4335"></path><path d="M10 16.5 24 27.2l14-10.7v-1.1c0-1.66-1.34-3-3-3h-.7L24 20.1 13.7 12.4H13c-1.66 0-3 1.34-3 3v1.1Z" fill="#4285F4"></path><path d="M10 16.5V32c0 1.66 1.34 3 3 3h3V21.4L10 16.5Z" fill="#34A853"></path><path d="M38 16.5V32c0 1.66-1.34 3-3 3h-3V21.4l6-4.9Z" fill="#FBBC04"></path></g></svg></a>
+<div class="topbar-tools">
+<a aria-label="Guide Git &amp; GitHub" class="topbar-icon-item" href="https://baba-niang.github.io/Guide-Git-Github/" rel="noopener noreferrer" target="_blank" title="Guide Git &amp; GitHub">
+<svg class="topbar-icon-svg" fill="#F05033" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"></path></svg>
+<span class="topbar-icon-label">Git</span>
+</a>
+<a aria-label="Guide PHP" class="topbar-icon-item" href="https://baba-niang.github.io/Guide-PHP/" rel="noopener noreferrer" target="_blank" title="Guide PHP">
+<svg class="topbar-icon-svg" fill="#777BB4" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"></path></svg>
+<span class="topbar-icon-label">PHP</span>
+</a>
+<a aria-label="Guide Bootstrap" class="topbar-icon-item" href="https://baba-niang.github.io/Guide-Bootstrap-Bigginers/" rel="noopener noreferrer" target="_blank" title="Guide Bootstrap">
+<svg class="topbar-icon-svg" fill="#7952B3" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.957v3.348h2.231c1.459 0 2.232-.585 2.232-1.685s-.795-1.663-2.326-1.663zM24 11.39v1.218c-1.128.108-1.817.944-2.226 2.268-.407 1.319-.463 2.937-.42 4.186.045 1.3-.968 2.5-2.337 2.5H4.985c-1.37 0-2.383-1.2-2.337-2.5.043-1.249-.013-2.867-.42-4.186-.41-1.324-1.1-2.16-2.228-2.268V11.39c1.128-.108 1.819-.944 2.227-2.268.408-1.319.464-2.937.42-4.186-.045-1.3.968-2.5 2.338-2.5h14.032c1.37 0 2.382 1.2 2.337 2.5-.043 1.249.013 2.867.42 4.186.409 1.324 1.098 2.16 2.226 2.268zm-7.927 2.817c0-1.354-.953-2.333-2.368-2.488v-.057c1.04-.169 1.856-1.135 1.856-2.213 0-1.537-1.213-2.538-3.062-2.538h-4.16v10.172h4.181c2.218 0 3.553-1.086 3.553-2.876z"></path></svg>
+<span class="topbar-icon-label">Bootstrap</span>
+</a>
+<a aria-label="Guide UML" class="topbar-icon-item" href="https://baba-niang.github.io/Guide-UML-B/" rel="noopener noreferrer" target="_blank" title="Guide UML">
+<span class="topbar-uml-logo"><span class="uml-u">U</span><span class="uml-m">M</span><span class="uml-l">L</span></span>
+<span class="topbar-icon-label">UML</span>
+</a>
+<span aria-hidden="true" class="topbar-tools-divider"></span>
+<a aria-label="GitHub de Baba Niang" class="topbar-icon-item" href="https://github.com/Baba-Niang" rel="noopener noreferrer" target="_blank" title="GitHub de Baba Niang">
+<svg class="topbar-icon-svg icon-mono" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+<span class="topbar-icon-label">GitHub</span>
+</a>
+<a aria-label="LinkedIn de Baba Niang" class="topbar-icon-item" href="https://www.linkedin.com/in/baba-niang-121436383" rel="noopener noreferrer" target="_blank" title="LinkedIn de Baba Niang">
+<span class="topbar-linkedin-badge">in</span>
+<span class="topbar-icon-label">LinkedIn</span>
+</a>
+<a aria-label="Envoyer un e-mail à Baba Niang" class="topbar-icon-item" href="mailto:baba.niang.isep@gmail.com" title="Envoyer un e-mail à Baba Niang">
+<svg class="topbar-icon-svg" role="img" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" fill="#ffffff" r="23"></circle><g transform="translate(6 6) scale(.75)"><path d="M10 16.5V32c0 1.66 1.34 3 3 3h3V21.4L24 28l8-6.6V35h3c1.66 0 3-1.34 3-3V16.5l-3.4-2.7L24 21.2l-10.6-7.4L10 16.5Z" fill="#EA4335"></path><path d="M10 16.5 24 27.2l14-10.7v-1.1c0-1.66-1.34-3-3-3h-.7L24 20.1 13.7 12.4H13c-1.66 0-3 1.34-3 3v1.1Z" fill="#4285F4"></path><path d="M10 16.5V32c0 1.66 1.34 3 3 3h3V21.4L10 16.5Z" fill="#34A853"></path><path d="M38 16.5V32c0 1.66-1.34 3-3 3h-3V21.4l6-4.9Z" fill="#FBBC04"></path></g></svg>
+<span class="topbar-icon-label">Email</span>
+</a>
+</div>
 </div>
 <div class="topbar-actions">
-<a class="topbar-link" href="https://baba-niang.github.io/Guide-Git-Github/" rel="noopener noreferrer" target="_blank">
-          📖 <span class="link-text">Référence</span>
-</a>
+<button aria-label="Masquer/afficher la liste des chapitres" class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()" title="Masquer/afficher la liste des chapitres">
+<svg fill="none" height="18" id="sidebarToggleIcon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="2" width="18" x="3" y="3"></rect><line x1="9" x2="9" y1="3" y2="21"></line><polyline points="6 10 4 12 6 14"></polyline></svg>
+</button>
 <button aria-label="Changer de thème" class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Changer de thème">
 <svg class="icon-sun" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" x2="12" y1="1" y2="3"></line><line x1="12" x2="12" y1="21" y2="23"></line><line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line><line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line><line x1="1" x2="3" y1="12" y2="12"></line><line x1="21" x2="23" y1="12" y2="12"></line><line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line><line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line></svg>
 <svg class="icon-moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
@@ -12606,6 +12780,46 @@ function toggleTheme() {
   setStoredTheme(next);
 }
 
+// === Hauteur réelle de la topbar (variable, car la barre d'outils peut faire
+// varier sa hauteur selon la largeur d'écran) : on la mesure et on l'expose
+// en variable CSS pour que le contenu et la barre de progression s'alignent. ===
+function updateTopbarHeight() {
+  const topbar = document.querySelector('.topbar');
+  if (topbar) {
+    document.documentElement.style.setProperty('--topbar-h', topbar.offsetHeight + 'px');
+  }
+}
+
+// === Masquer/afficher la sidebar des chapitres pour lire en plein écran ===
+function applySidebarState(collapsed) {
+  document.body.classList.toggle('sidebar-collapsed', collapsed);
+  const btn = document.getElementById('sidebarToggleBtn');
+  if (btn) {
+    btn.setAttribute('aria-label', collapsed ? 'Afficher la liste des chapitres' : 'Masquer la liste des chapitres');
+    btn.setAttribute('title', collapsed ? 'Afficher la liste des chapitres' : 'Masquer la liste des chapitres');
+  }
+}
+
+function toggleSidebar() {
+  const collapsed = !document.body.classList.contains('sidebar-collapsed');
+  applySidebarState(collapsed);
+  try {
+    localStorage.setItem('javaTorrefieSidebarCollapsed', collapsed ? '1' : '0');
+  } catch (e) {
+    /* localStorage indisponible (mode privé, etc.) : l'état ne sera pas mémorisé */
+  }
+}
+
+function initSidebarStateEarly() {
+  let collapsed = false;
+  try {
+    collapsed = localStorage.getItem('javaTorrefieSidebarCollapsed') === '1';
+  } catch (e) {
+    /* localStorage indisponible : on part de l'état par défaut (sidebar visible) */
+  }
+  applySidebarState(collapsed);
+}
+
 // Apply theme ASAP to avoid flash (called inline in <head>)
 function initThemeEarly() {
   applyTheme(getPreferredTheme());
@@ -13026,7 +13240,14 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialiser le bouton de thème
   applyTheme(getPreferredTheme());
-  
+
+  // Restaurer l'état masqué/affiché de la sidebar des chapitres
+  initSidebarStateEarly();
+
+  // Mesurer la hauteur réelle de la topbar (icônes/labels peuvent la faire varier)
+  updateTopbarHeight();
+  window.addEventListener('resize', updateTopbarHeight);
+
   createParticles();
   setupSidebarTracking();
   setupSmoothScroll();
