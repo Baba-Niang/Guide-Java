@@ -582,6 +582,7 @@ a {
   scroll-behavior: smooth;
   height: calc(100vh - var(--topbar-h, 57px));
   scrollbar-width: thin;
+  scrollbar-color: var(--c-amber) var(--bg);
 }
 
 .slides-container::-webkit-scrollbar {
@@ -1183,6 +1184,25 @@ a {
   margin: 1rem 0;
   font-size: 13.6px;
   line-height: 1.6;
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-amber) transparent;
+}
+
+.fiche-markdown pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.fiche-markdown pre::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.fiche-markdown pre::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, var(--c-amber), var(--c-ember));
+  border-radius: 4px;
+}
+
+.fiche-markdown pre::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #d97706, var(--c-ember));
 }
 
 .fiche-markdown pre code {
