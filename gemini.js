@@ -16,7 +16,7 @@
   // pas l'exécuter). Remplace la ligne ci-dessous par l'URL complète
   // de ton déploiement Vercel une fois qu'il est en ligne, par ex. :
   //   const GEMINI_ENDPOINT = "https://java-torrefie-gemini.vercel.app/api/gemini";
-  const GEMINI_ENDPOINT = const GEMINI_ENDPOINT = "https://java-torrefie-gemini.vercel.app/api/gemini";;
+  const GEMINI_ENDPOINT = "https://java-torrefie-gemini.vercel.app/api/gemini";
 
   // Anti-spam simple côté client : évite le double-envoi et
   // limite la fréquence des requêtes (le vrai rate-limiting
