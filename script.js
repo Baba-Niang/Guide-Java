@@ -499,6 +499,51 @@ function setupSmoothScroll() {
   });
 }
 
+
+
+// === RAPPEL D'APPRENTISSAGE ===
+function createLearningReminder() {
+  if (document.getElementById('learningReminder')) return;
+
+  const reminder = document.createElement('aside');
+  reminder.className = 'learning-reminder';
+  reminder.id = 'learningReminder';
+  reminder.setAttribute('role', 'status');
+  reminder.setAttribute('aria-live', 'polite');
+  reminder.innerHTML = `
+    <button class="learning-reminder-close" type="button" aria-label="Fermer le rappel">×</button>
+    <div class="learning-reminder-title">Petit rappel</div>
+    <ul class="learning-reminder-list">
+      <li>Tu bloques sur une notion ? Fais une <strong>capture d’écran</strong> et montre-la à <strong>Gemini</strong> ou à une autre IA spécialisée.</li>
+      <li>Demande une <strong>explication simple</strong> avec un exemple.</li>
+      <li>Après chaque notion, demande des <strong>exercices adaptés à ton niveau</strong>.</li>
+    </ul>
+    <div class="learning-reminder-final"><strong>C’est ainsi que tu progresseras !</strong></div>
+  `;
+
+  document.body.appendChild(reminder);
+
+  const closeBtn = reminder.querySelector('.learning-reminder-close');
+  let hideTimer;
+  const hide = function() {
+    reminder.classList.remove('is-visible');
+  };
+
+  closeBtn.addEventListener('click', function() {
+    clearTimeout(hideTimer);
+    hide();
+  });
+
+  const show = function() {
+    reminder.classList.add('is-visible');
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(hide, 12000);
+  };
+
+  // Premier rappel après 5 minutes, puis toutes les 5 minutes.
+  window.setInterval(show, 5 * 60 * 1000);
+}
+
 // === INIT ===
 document.addEventListener('DOMContentLoaded', function() {
   // Activer les transitions de thème après le premier rendu (évite le flash)
@@ -521,6 +566,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setupSmoothScroll();
   setupKeyboardNav();
   setupWheelNav();
+  createLearningReminder();
   
   console.log('☕ Java Baba Niang Guide Apprentissage — site chargé');
   console.log('📖 180 fiches · 20 chapitres · Baba Niang');
