@@ -2591,3 +2591,98 @@ html, body {
   margin-bottom: 6px;
   object-fit: contain;
 }
+
+
+/* ============================================================
+   GEMINI — Message de secours temporaire
+   ============================================================ */
+.gemini-offline-messages {
+  padding: 20px 18px 24px;
+  justify-content: flex-start;
+}
+
+.gemini-offline-card {
+  max-width: 100%;
+  width: 100%;
+}
+
+.gemini-offline-card .gemini-msg-bubble {
+  width: 100%;
+  padding: 17px 18px 18px;
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.08), rgba(155, 114, 203, 0.07));
+  border: 1px solid color-mix(in oklch, var(--c-amber) 35%, var(--border));
+  border-radius: 14px;
+  color: var(--fg);
+  white-space: normal;
+}
+
+.gemini-offline-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.gemini-offline-dot {
+  width: 23px;
+  height: 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--c-amber);
+  font-weight: 800;
+  flex: none;
+}
+
+.gemini-offline-text {
+  margin: 0 0 14px;
+  color: var(--fg-muted);
+}
+
+.gemini-offline-help {
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.gemini-offline-help p {
+  margin: 0 0 6px;
+}
+
+.gemini-offline-help .gemini-msg-list {
+  margin: 7px 0 15px 19px;
+}
+
+.gemini-offline-help .gemini-msg-list li {
+  margin: 4px 0;
+}
+
+.gemini-official-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4285f4, #7c5ac7);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  transition: transform .18s ease, filter .18s ease;
+}
+
+.gemini-official-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+.gemini-official-sparkle {
+  font-size: 16px;
+}

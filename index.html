@@ -17350,42 +17350,27 @@ Associe chaque langage à une image forte :
 </div>
 
 <div class="gemini-window-body">
-<div class="gemini-messages" id="geminiMessages">
-<div class="gemini-msg gemini-msg-bot">
-<div class="gemini-msg-bubble">Bonjour !<br>Je peux t'aider à comprendre Java :
+<div class="gemini-messages gemini-offline-messages" id="geminiMessages">
+<div class="gemini-msg gemini-msg-bot gemini-offline-card">
+<div class="gemini-msg-bubble">
+<div class="gemini-offline-title"><span class="gemini-offline-dot">!</span> Petit problème avec Gemini</div>
+<p class="gemini-offline-text">Le service intégré rencontre actuellement un souci de configuration.</p>
+<div class="gemini-offline-help">
+<p><strong>Bloqué sur une notion ? Pas de panique.</strong></p>
 <ul class="gemini-msg-list">
-<li>expliquer une notion</li>
-<li>expliquer ton code</li>
-<li>corriger une erreur</li>
-<li>proposer des exercices</li>
-<li>te donner des indices</li>
+<li>Ouvre Gemini officiel.</li>
+<li>Pose ta question sur Java.</li>
+<li>Demande une explication, un exemple ou un indice.</li>
+<li>Demande un exercice après chaque notion pour t’entraîner.</li>
 </ul>
-Pose-moi ta question.</div>
+</div>
+<a class="gemini-official-btn" href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">
+<span class="gemini-official-sparkle">✦</span> Ouvrir Gemini officiel ↗
+</a>
 </div>
 </div>
-
-<div class="gemini-typing" id="geminiTyping">
-<span class="gemini-typing-dots"><span></span><span></span><span></span></span>
-Gemini réfléchit...
 </div>
-
-<div class="gemini-quick-actions" id="geminiQuickActions">
-<button class="gemini-quick-btn" data-prompt="Explique-moi simplement cette notion." type="button">Expliquer simplement</button>
-<button class="gemini-quick-btn" data-prompt="Donne-moi un exemple de code Java pour illustrer cette notion." type="button">Donner un exemple</button>
-<button class="gemini-quick-btn" data-prompt="Propose-moi un exercice adapté à cette notion." type="button">Me donner un exercice</button>
-<button class="gemini-quick-btn" data-prompt="Voici mon code, peux-tu le corriger et m'expliquer les erreurs ?" type="button">Corriger mon code</button>
-<button class="gemini-quick-btn" data-prompt="Donne-moi juste un indice, pas la réponse complète." type="button">Me donner un indice</button>
-</div>
-
-<div class="gemini-attachment-preview" id="geminiAttachmentPreview"></div>
-
-<form class="gemini-input-row" id="geminiForm">
-<input accept="image/png,image/jpeg,image/webp,image/gif" hidden="" id="geminiFileInput" type="file"/>
-<button aria-label="Joindre une capture d'écran ou une image" class="gemini-attach-btn" id="geminiAttachBtn" title="Joindre une capture d'écran ou une image" type="button">📎</button>
-<textarea aria-label="Pose ta question sur Java" class="gemini-input" id="geminiInput" placeholder="Pose ta question sur Java..." rows="1"></textarea>
-<button aria-label="Envoyer" class="gemini-send-btn" id="geminiSendBtn" type="submit">➤</button>
-</form>
-</div>
+</div></div>
 </div>
 
   <script src="script.js" defer></script>
