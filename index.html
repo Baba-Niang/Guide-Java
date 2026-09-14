@@ -336,7 +336,7 @@
 <span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
 <div class="sidebar-text">
 <div class="sidebar-title">POO — Fondamentaux</div>
-<div class="sidebar-count">8 fiches</div>
+<div class="sidebar-count">9 fiches</div>
 </div>
 <svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#059669" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
 </a>
@@ -8455,7 +8455,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 <div class="chapter-meta">
 <div class="chapter-badge-row">
 <span class="chapter-badge" style="color:#059669;border-color:#05966940;background-color:#05966910">Chapitre 10</span>
-<span class="chapter-count">8 fiches</span>
+<span class="chapter-count">9 fiches</span>
 </div>
 <h2 class="chapter-title" style="color:#059669">POO — Fondamentaux</h2>
 <p class="chapter-subtitle">Classes, objets, attributs, méthodes, constructeurs — l'art du torréfacteur</p>
@@ -8804,12 +8804,78 @@ public void afficher() {
 </div>
 </div>
 </article>
-<article class="fiche-card" data-fiche-id="47" data-index="4" style="--accent:#059669">
+
+<article class="fiche-card fiche-group-card instance-static-card" data-fiche-id="instance-static" data-index="4" style="--accent:#059669">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#059669,#05966988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
 <span class="badge-label">Fiche</span>
 <span class="badge-num">47</span>
+</div>
+<div class="fiche-info">
+<h3 class="fiche-title" style="color:#059669">Membres d’instance VS membres static</h3>
+<p class="fiche-subtitle">Comprendre la différence entre ce qui appartient à l’objet et ce qui appartient à la classe.</p>
+<div class="fiche-stats"><span class="stat-badge" style="color:#059669;background:#0596691a;border-color:#05966940">📖 5 fiches visuelles</span><span class="stat-badge" style="color:#059669;background:#0596691a;border-color:#05966940">💡 Comprendre + À retenir</span></div>
+</div>
+<svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<div class="fiche-content" style="display:none">
+<div class="fiche-content-inner">
+<div class="fiche-group-intro">
+<strong>Membres d’instance VS membres static</strong> — Parcours visuel F3 → F7, puis une seule synthèse pour comprendre et retenir.
+</div>
+
+<div class="fiche-subpart">
+<div class="fiche-subpart-head"><span class="fiche-subpart-label">F3</span><h4>Membres d’instance</h4></div>
+<div class="fiche-image-wrap fiche-subpart-image"><img alt="Fiche F3 — Membres d’instance" loading="lazy" src="fiches/F3.png"/></div>
+</div>
+
+<div class="fiche-subpart">
+<div class="fiche-subpart-head"><span class="fiche-subpart-label">F4</span><h4>Membres static</h4></div>
+<div class="fiche-image-wrap fiche-subpart-image"><img alt="Fiche F4 — Membres static" loading="lazy" src="fiches/F4.png"/></div>
+</div>
+
+<div class="fiche-subpart">
+<div class="fiche-subpart-head"><span class="fiche-subpart-label">F5</span><h4>Instance VS static</h4></div>
+<div class="fiche-image-wrap fiche-subpart-image"><img alt="Fiche F5 — Instance VS static" loading="lazy" src="fiches/F5.png"/></div>
+</div>
+
+<div class="fiche-subpart">
+<div class="fiche-subpart-head"><span class="fiche-subpart-label">F6</span><h4>Exemple complet</h4></div>
+<div class="fiche-image-wrap fiche-subpart-image"><img alt="Fiche F6 — Exemple complet" loading="lazy" src="fiches/F6.png"/></div>
+</div>
+
+<div class="fiche-subpart">
+<div class="fiche-subpart-head"><span class="fiche-subpart-label">F7</span><h4>Quand utiliser l’un ou l’autre ?</h4></div>
+<div class="fiche-image-wrap fiche-subpart-image"><img alt="Fiche F7 — Quand utiliser l’un ou l’autre ?" loading="lazy" src="fiches/F7.png"/></div>
+</div>
+
+<div class="fiche-markdown" data-content-raw="## À COMPRENDRE
+
+**Membre d’instance** → appartient à chaque objet. Chaque objet peut donc avoir sa propre valeur.
+
+**Membre static** → appartient à la classe. La valeur est commune à tous les objets de cette classe.
+
+## À RETENIR
+
+La vraie question est : **« À qui appartient le membre ? »**
+
+- `objet.membre` → membre d’instance
+- `Classe.membre` → membre `static`
+
+> **Chaque objet ? → instance.**
+> **Toute la classe ? → static.**"></div>
+
+</div>
+</div>
+</article>
+
+<article class="fiche-card" data-fiche-id="48" data-index="5" style="--accent:#059669">
+<div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#059669,#05966988)"></div>
+<button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
+<div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
+<span class="badge-label">Fiche</span>
+<span class="badge-num">48</span>
 </div>
 <div class="fiche-info">
 <h3 class="fiche-title" style="color:#059669">Constructeur</h3>
@@ -8903,11 +8969,11 @@ Le constructeur porte le même nom que la classe et est appelé avec `new` lors 
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="48" data-index="5" style="--accent:#059669">
+<article class="fiche-card fiche-group-card" data-fiche-id="49" data-index="6" style="--accent:#059669">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
 <span class="badge-label">Fiche</span>
-<span class="badge-num">48</span>
+<span class="badge-num">49</span>
 </div>
 <div class="fiche-info">
 <h3 class="fiche-title" style="color:#059669">this</h3>
@@ -8990,11 +9056,11 @@ class Personne {
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="49" data-index="6" style="--accent:#059669">
+<article class="fiche-card fiche-group-card" data-fiche-id="50" data-index="7" style="--accent:#059669">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
 <span class="badge-label">Fiche</span>
-<span class="badge-num">49</span>
+<span class="badge-num">50</span>
 </div>
 <div class="fiche-info">
 <h3 class="fiche-title" style="color:#059669">static</h3>
@@ -9141,11 +9207,11 @@ Dans une méthode `static` : **pas de `this` et pas d'accès direct aux membres 
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="50" data-index="7" style="--accent:#059669">
+<article class="fiche-card fiche-group-card" data-fiche-id="51" data-index="8" style="--accent:#059669">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
 <span class="badge-label">Fiche</span>
-<span class="badge-num">50</span>
+<span class="badge-num">51</span>
 </div>
 <div class="fiche-info">
 <h3 class="fiche-title" style="color:#059669">final</h3>
@@ -9966,7 +10032,7 @@ class Enfant extends Parent {
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="55" data-index="4" style="--accent:#0284c7">
+<article class="fiche-card fiche-group-card" data-fiche-id="55" data-index="5" style="--accent:#0284c7">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0284c715;border-color:#0284c740;color:#0284c7">
 <span class="badge-label">Fiche</span>
@@ -10082,7 +10148,7 @@ La référence détermine ce qui est accessible à la compilation ; l'objet rée
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="56" data-index="5" style="--accent:#0284c7">
+<article class="fiche-card fiche-group-card" data-fiche-id="56" data-index="6" style="--accent:#0284c7">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0284c715;border-color:#0284c740;color:#0284c7">
 <span class="badge-label">Fiche</span>
@@ -10157,7 +10223,7 @@ Le choix de la surcharge dépend de la **liste de paramètres**."></div>
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="57" data-index="6" style="--accent:#0284c7">
+<article class="fiche-card fiche-group-card" data-fiche-id="57" data-index="7" style="--accent:#0284c7">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0284c715;border-color:#0284c740;color:#0284c7">
 <span class="badge-label">Fiche</span>
@@ -10280,7 +10346,7 @@ Une classe abstraite peut contenir **des méthodes abstraites et concrètes**.'>
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="58" data-index="7" style="--accent:#0284c7">
+<article class="fiche-card fiche-group-card" data-fiche-id="58" data-index="8" style="--accent:#0284c7">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0284c715;border-color:#0284c740;color:#0284c7">
 <span class="badge-label">Fiche</span>
@@ -10442,7 +10508,7 @@ class Robot implements Marcher, Parler {
 </div>
 </div>
 </article>
-<article class="fiche-card fiche-group-card" data-fiche-id="59" data-index="8" style="--accent:#0284c7">
+<article class="fiche-card fiche-group-card" data-fiche-id="59" data-index="9" style="--accent:#0284c7">
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0284c715;border-color:#0284c740;color:#0284c7">
 <span class="badge-label">Fiche</span>
@@ -11635,7 +11701,7 @@ public class CompteBancaire {
 </div>
 </div>
 </article>
-<article class="fiche-card" data-fiche-id="65" data-image-default="visible" data-index="4" style="--accent:#e11d48">
+<article class="fiche-card" data-fiche-id="65" data-image-default="visible" data-index="5" style="--accent:#e11d48">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#e11d48,#e11d4888)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#e11d4815;border-color:#e11d4840;color:#e11d48">
@@ -11824,7 +11890,7 @@ public class Utilisateur {
 </div>
 </div>
 </article>
-<article class="fiche-card" data-fiche-id="66" data-image-default="visible" data-index="5" style="--accent:#e11d48">
+<article class="fiche-card" data-fiche-id="66" data-image-default="visible" data-index="6" style="--accent:#e11d48">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#e11d48,#e11d4888)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#e11d4815;border-color:#e11d4840;color:#e11d48">
@@ -12405,7 +12471,7 @@ Les collections de hachage utilisent d’abord le hash pour trouver une zone, pu
 &gt; **`equals()` + `hashCode()` vont ensemble** dès qu’on définit une égalité personnalisée."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="E5" data-index="4" style="--accent:#059669">
+</article><article class="fiche-card" data-fiche-id="E5" data-index="5" style="--accent:#059669">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#059669,#05966988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
@@ -12802,7 +12868,7 @@ Une classe générique déclare son paramètre de type après son nom : `class B
 &gt; Une classe générique évite de créer une classe différente pour chaque type."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="B2C" data-index="4" style="--accent:#7c3aed">
+</article><article class="fiche-card" data-fiche-id="B2C" data-index="5" style="--accent:#7c3aed">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed">
@@ -12835,7 +12901,7 @@ Une classe peut recevoir plusieurs paramètres de type. La convention fréquente
 &gt; `&lt;K,V&gt;` signifie : **deux types indépendants**."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="B3A" data-index="5" style="--accent:#7c3aed">
+</article><article class="fiche-card" data-fiche-id="B3A" data-index="6" style="--accent:#7c3aed">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed">
@@ -12868,7 +12934,7 @@ La même méthode peut travailler avec plusieurs types sans créer une version p
 &gt; Le `&lt;T&gt;` placé **avant le retour** appartient à la méthode."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="B3B" data-index="6" style="--accent:#7c3aed">
+</article><article class="fiche-card" data-fiche-id="B3B" data-index="7" style="--accent:#7c3aed">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed">
@@ -12902,7 +12968,7 @@ Une classe générique utilise un type dans toute la classe : `class Boite&lt;T&
 &gt; Regarder **où `&lt;T&gt;` est déclaré** pour savoir à quelle portée il appartient."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="B4A" data-index="7" style="--accent:#7c3aed">
+</article><article class="fiche-card" data-fiche-id="B4A" data-index="8" style="--accent:#7c3aed">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed">
@@ -12935,7 +13001,7 @@ Une classe générique utilise un type dans toute la classe : `class Boite&lt;T&
 &gt; `extends` sur un paramètre générique signifie ici **« T doit respecter cette limite »**."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="B4B" data-index="8" style="--accent:#7c3aed">
+</article><article class="fiche-card" data-fiche-id="B4B" data-index="9" style="--accent:#7c3aed">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed">
@@ -13600,7 +13666,7 @@ Les opérations fondamentales d’une `List` manipulent directement les élémen
 Avec `List&lt;Integer&gt;`, `remove()` possède une surcharge qui peut créer une confusion entre indice et valeur."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="C2B-2" data-index="4" style="--accent:#0ea5e9">
+</article><article class="fiche-card" data-fiche-id="C2B-2" data-index="5" style="--accent:#0ea5e9">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#0ea5e9,#0ea5e988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0ea5e915;border-color:#0ea5e940;color:#0ea5e9">
@@ -13633,7 +13699,7 @@ Avec `List&lt;Integer&gt;`, `remove()` possède une surcharge qui peut créer un
 - `clear` → tout supprimer."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="C3A" data-index="5" style="--accent:#0ea5e9">
+</article><article class="fiche-card" data-fiche-id="C3A" data-index="6" style="--accent:#0ea5e9">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#0ea5e9,#0ea5e988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0ea5e915;border-color:#0ea5e940;color:#0ea5e9">
@@ -13666,7 +13732,7 @@ Avec `List&lt;Integer&gt;`, `remove()` possède une surcharge qui peut créer un
 &gt; `ArrayList` est souvent le choix par défaut pour une liste générale."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="C3B" data-index="6" style="--accent:#0ea5e9">
+</article><article class="fiche-card" data-fiche-id="C3B" data-index="7" style="--accent:#0ea5e9">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#0ea5e9,#0ea5e988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0ea5e915;border-color:#0ea5e940;color:#0ea5e9">
@@ -13699,7 +13765,7 @@ Après `add("A")`, `add("B")`, la liste vaut `[A, B]` et `get(1)` renvoie `B`.
 Un indice hors limites provoque une `IndexOutOfBoundsException`.'></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="C3C" data-index="7" style="--accent:#0ea5e9">
+</article><article class="fiche-card" data-fiche-id="C3C" data-index="8" style="--accent:#0ea5e9">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#0ea5e9,#0ea5e988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0ea5e915;border-color:#0ea5e940;color:#0ea5e9">
@@ -13732,7 +13798,7 @@ Un indice hors limites provoque une `IndexOutOfBoundsException`.'></div>
 &gt; **Modifier** ≠ **supprimer** : `set()` remplace, `remove()` retire."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="C3D" data-index="8" style="--accent:#0ea5e9">
+</article><article class="fiche-card" data-fiche-id="C3D" data-index="9" style="--accent:#0ea5e9">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#0ea5e9,#0ea5e988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#0ea5e915;border-color:#0ea5e940;color:#0ea5e9">
@@ -15222,7 +15288,7 @@ Une classe ne possède qu’un ordre naturel principal ; si plusieurs critères 
 &gt; Comparable répond à : **« Quel est l’ordre par défaut de cet objet ? »**"></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="D3A" data-index="4" style="--accent:#f59e0b">
+</article><article class="fiche-card" data-fiche-id="D3A" data-index="5" style="--accent:#f59e0b">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#f59e0b,#f59e0b88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#f59e0b15;border-color:#f59e0b40;color:#f59e0b">
@@ -15255,7 +15321,7 @@ Une même liste de personnes peut être triée par nom, puis par âge, puis par 
 &gt; Comparator = **ordre choisi selon le besoin**."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="D3B" data-index="5" style="--accent:#f59e0b">
+</article><article class="fiche-card" data-fiche-id="D3B" data-index="6" style="--accent:#f59e0b">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#f59e0b,#f59e0b88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#f59e0b15;border-color:#f59e0b40;color:#f59e0b">
@@ -15285,7 +15351,7 @@ Une même liste de personnes peut être triée par nom, puis par âge, puis par 
 Négatif → `a` avant `b` · zéro → équivalents pour ce critère · positif → `a` après `b`."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="D3C" data-index="6" style="--accent:#f59e0b">
+</article><article class="fiche-card" data-fiche-id="D3C" data-index="7" style="--accent:#f59e0b">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#f59e0b,#f59e0b88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#f59e0b15;border-color:#f59e0b40;color:#f59e0b">
@@ -15318,7 +15384,7 @@ La règle de tri devient interchangeable et réutilisable.
 &gt; Plusieurs critères → plusieurs comparateurs ou un comparateur combiné."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="D4" data-index="7" style="--accent:#f59e0b">
+</article><article class="fiche-card" data-fiche-id="D4" data-index="8" style="--accent:#f59e0b">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#f59e0b,#f59e0b88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#f59e0b15;border-color:#f59e0b40;color:#f59e0b">
@@ -15716,7 +15782,7 @@ Les opérations peuvent lancer des exceptions d’E/S : il faut donc gérer ou p
 &gt; Pour des fichiers texte simples, l’API `Files` réduit fortement le code nécessaire."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="F2C" data-index="4" style="--accent:#ea580c">
+</article><article class="fiche-card" data-fiche-id="F2C" data-index="5" style="--accent:#ea580c">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#ea580c,#ea580c88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#ea580c15;border-color:#ea580c40;color:#ea580c">
@@ -15749,7 +15815,7 @@ Le comportement d’écriture dépend des options passées à la méthode.
 &gt; Toujours savoir si l’objectif est **remplacer** ou **ajouter** avant d’écrire."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="F2D" data-index="5" style="--accent:#ea580c">
+</article><article class="fiche-card" data-fiche-id="F2D" data-index="6" style="--accent:#ea580c">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#ea580c,#ea580c88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#ea580c15;border-color:#ea580c40;color:#ea580c">
@@ -15782,7 +15848,7 @@ Supprimer un dossier non vide avec les méthodes simples de `Files` ne revient p
 &gt; `delete` exige l’existence ; `deleteIfExists` tolère l’absence."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="F2E" data-index="6" style="--accent:#ea580c">
+</article><article class="fiche-card" data-fiche-id="F2E" data-index="7" style="--accent:#ea580c">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#ea580c,#ea580c88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#ea580c15;border-color:#ea580c40;color:#ea580c">
@@ -15815,7 +15881,7 @@ Le parcours d’un répertoire peut produire des erreurs d’accès ; les ressou
 &gt; Un dossier se parcourt comme une collection de **chemins**."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="F3A" data-index="7" style="--accent:#ea580c">
+</article><article class="fiche-card" data-fiche-id="F3A" data-index="8" style="--accent:#ea580c">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#ea580c,#ea580c88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#ea580c15;border-color:#ea580c40;color:#ea580c">
@@ -15850,7 +15916,7 @@ Ils offrent moins de confort pour certaines opérations modernes que l’API `Fi
 </div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="F3B" data-index="8" style="--accent:#ea580c">
+</article><article class="fiche-card" data-fiche-id="F3B" data-index="9" style="--accent:#ea580c">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#ea580c,#ea580c88)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#ea580c15;border-color:#ea580c40;color:#ea580c">
@@ -16640,7 +16706,7 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 &gt; Formatter = **présenter ou lire** une date selon un format."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="H5" data-index="4" style="--accent:#10b981">
+</article><article class="fiche-card" data-fiche-id="H5" data-index="5" style="--accent:#10b981">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#10b981,#10b98188)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#10b98115;border-color:#10b98140;color:#10b981">
@@ -16673,7 +16739,7 @@ Les classes modernes de date/heure sont immuables : `plusDays()` et `minusDays()
 &gt; Calculer une date = **obtenir une nouvelle date**."></div>
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="H6" data-index="5" style="--accent:#10b981">
+</article><article class="fiche-card" data-fiche-id="H6" data-index="6" style="--accent:#10b981">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#10b981,#10b98188)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#10b98115;border-color:#10b98140;color:#10b981">
@@ -17068,7 +17134,7 @@ Le **tableau** est le premier conteneur de données. En C comme en Java, c'est u
 - **Java** : `notes.length` donne toujours la taille du tableau, sans erreur possible.
 
 ### À retenir
-&gt; C : tableau = bloc mémoire brut, non vérifié. Java : tableau = objet avec `.length`, accès vérifiés. La sécurité Java coûte un peu de performance, mais évite des bugs subtils et des failles de sécurité."></div></div></div></article><article class="fiche-card" data-fiche-id="CV5" data-index="4" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV5</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">3 · Fonction vs Méthode</h3><p class="fiche-subtitle">Regrouper du comportement</p><p class="fiche-intro">Code C + Java</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV5</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — fonction</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#dcdcaa">addition</span><span style="color:#cbd5e1">(</span><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">a</span><span style="color:#cbd5e1">,</span> <span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">b</span><span style="color:#cbd5e1">)</span> <span style="color:#cbd5e1">{</span>
+&gt; C : tableau = bloc mémoire brut, non vérifié. Java : tableau = objet avec `.length`, accès vérifiés. La sécurité Java coûte un peu de performance, mais évite des bugs subtils et des failles de sécurité."></div></div></div></article><article class="fiche-card" data-fiche-id="CV5" data-index="5" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV5</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">3 · Fonction vs Méthode</h3><p class="fiche-subtitle">Regrouper du comportement</p><p class="fiche-intro">Code C + Java</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV5</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — fonction</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#dcdcaa">addition</span><span style="color:#cbd5e1">(</span><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">a</span><span style="color:#cbd5e1">,</span> <span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">b</span><span style="color:#cbd5e1">)</span> <span style="color:#cbd5e1">{</span>
 <span style="color:#f59e0b;font-weight:600">return</span> <span style="color:#e2e8f0">a</span> <span style="color:#cbd5e1">+</span> <span style="color:#e2e8f0">b</span><span style="color:#cbd5e1">;</span>
 <span style="color:#cbd5e1">}</span>
 <span style="color:#6b7280;font-style:italic">// appel</span>
@@ -17091,7 +17157,7 @@ Une **fonction** (C) et une **méthode** (Java) font conceptuellement la même c
 L'orientation objet regroupe **données + comportement** dans la même entité (la classe). Une méthode `Calculatrice.addition` peut accéder aux champs de l'objet `Calculatrice` sans qu'on les lui passe. C'est l'**encapsulation** : l'objet porte ses données et ses opérations.
 
 ### À retenir
-&gt; Fonction C = verbe isolé. Méthode Java = verbe attaché à un nom (l'objet). Le changement mental est crucial pour penser orienté objet."></div></div></div></article><article class="fiche-card" data-fiche-id="CV6" data-index="5" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV6</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">4 · Struct vs Classe</h3><p class="fiche-subtitle">Regrouper des données</p><p class="fiche-intro">Code + encapsulation</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV6</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — struct</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">struct</span> <span style="color:#7dd3fc">Point</span> <span style="color:#cbd5e1">{</span>
+&gt; Fonction C = verbe isolé. Méthode Java = verbe attaché à un nom (l'objet). Le changement mental est crucial pour penser orienté objet."></div></div></div></article><article class="fiche-card" data-fiche-id="CV6" data-index="6" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV6</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">4 · Struct vs Classe</h3><p class="fiche-subtitle">Regrouper des données</p><p class="fiche-intro">Code + encapsulation</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV6</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — struct</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">struct</span> <span style="color:#7dd3fc">Point</span> <span style="color:#cbd5e1">{</span>
 <span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">x</span><span style="color:#cbd5e1">;</span>
 <span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">y</span><span style="color:#cbd5e1">;</span>
 <span style="color:#cbd5e1">}</span><span style="color:#cbd5e1">;</span>
@@ -17127,7 +17193,7 @@ La **struct** (C) et la **class** (Java) regroupent des données liées. Mais la
 - **Java** : constructeur natif `Point(int x, int y)`, appelé automatiquement par `new Point(3, 4)`.
 
 ### À retenir
-&gt; C : struct = données seules. Java : class = données + comportement + encapsulation + héritage. C'est le cœur de la POO."></div></div></div></article><article class="fiche-card" data-fiche-id="CV7" data-index="6" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV7</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">5 · Pointeur vs Référence</h3><p class="fiche-subtitle">Accéder à la mémoire</p><p class="fiche-intro">Code + pouvoir vs sécurité</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV7</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — pointeur</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">x</span> <span style="color:#cbd5e1">=</span> <span style="color:#fb923c">10</span><span style="color:#cbd5e1">;</span>
+&gt; C : struct = données seules. Java : class = données + comportement + encapsulation + héritage. C'est le cœur de la POO."></div></div></div></article><article class="fiche-card" data-fiche-id="CV7" data-index="7" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV7</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">5 · Pointeur vs Référence</h3><p class="fiche-subtitle">Accéder à la mémoire</p><p class="fiche-intro">Code + pouvoir vs sécurité</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV7</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — pointeur</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#e2e8f0">x</span> <span style="color:#cbd5e1">=</span> <span style="color:#fb923c">10</span><span style="color:#cbd5e1">;</span>
 <span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#cbd5e1">*</span><span style="color:#e2e8f0">p</span> <span style="color:#cbd5e1">=</span> <span style="color:#cbd5e1">&amp;</span><span style="color:#e2e8f0">x</span><span style="color:#cbd5e1">;</span> <span style="color:#6b7280;font-style:italic">// adresse de x</span>
 <span style="color:#cbd5e1">*</span><span style="color:#e2e8f0">p</span> <span style="color:#cbd5e1">=</span> <span style="color:#fb923c">20</span><span style="color:#cbd5e1">;</span> <span style="color:#6b7280;font-style:italic">// modifie x</span>
 <span style="color:#e2e8f0">p</span><span style="color:#cbd5e1">+</span><span style="color:#cbd5e1">+</span><span style="color:#cbd5e1">;</span> <span style="color:#6b7280;font-style:italic">// arithmétique !</span>
@@ -17159,7 +17225,7 @@ Point q = p;   // q et p désignent le même objet
 On ne peut pas &quot;déborder&quot; : une référence pointe toujours vers un objet valide (ou `null`). Pas de segfault, pas de lecture hors zone — au pire, une `NullPointerException` levée proprement.
 
 ### À retenir
-&gt; Pointeur C = pouvoir absolu sur la mémoire, risques absolus. Référence Java = sécurité garantie, pouvoir limité. On ne peut pas corrompre la mémoire en Java."></div></div></div></article><article class="fiche-card" data-fiche-id="CV8" data-index="7" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV8</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">6 · malloc/free vs GC</h3><p class="fiche-subtitle">Gérer la mémoire</p><p class="fiche-intro">Schéma pile/tas + code</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV8</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-mem"><div class="cvs-mem-block cvs-mem-stack"><div class="cvs-mem-title" style="color:#10b981">▲ Pile (Stack)</div><div class="cvs-mem-item">Variables locales, paramètres</div><div class="cvs-mem-item">Gestion <b>automatique</b> dans les 2 langages</div><div class="cvs-mem-item">C : <code>int x;</code> sur la pile</div><div class="cvs-mem-item">Java : primitifs sur la pile</div><div class="cvs-mem-item">Durée de vie = portée du bloc</div></div><div class="cvs-mem-block cvs-mem-heap"><div class="cvs-mem-title" style="color:#f59e0b">▼ Tas (Heap)</div><div class="cvs-mem-item">Objets/vecteurs alloués dynamiquement</div><div class="cvs-mem-item"><b>C :</b> <code>malloc</code> / <code>free</code> manuels</div><div class="cvs-mem-item"><b>Java :</b> <code>new</code> + <b>GC</b> automatique</div><div class="cvs-mem-item">C : le programmeur <b>doit</b> libérer</div><div class="cvs-mem-item">Java : la JVM détecte et libère seule</div></div></div><div class="cvs-hello" style="margin-top:14px"><div class="cvs-code-card"><div class="cvs-code-head c">C — malloc / free</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#cbd5e1">*</span><span style="color:#e2e8f0">p</span> <span style="color:#cbd5e1">=</span> <span style="color:#dcdcaa">malloc</span><span style="color:#cbd5e1">(</span><span style="color:#f59e0b;font-weight:600">sizeof</span><span style="color:#cbd5e1">(</span><span style="color:#f59e0b;font-weight:600">int</span><span style="color:#cbd5e1">)</span><span style="color:#cbd5e1">)</span><span style="color:#cbd5e1">;</span>
+&gt; Pointeur C = pouvoir absolu sur la mémoire, risques absolus. Référence Java = sécurité garantie, pouvoir limité. On ne peut pas corrompre la mémoire en Java."></div></div></div></article><article class="fiche-card" data-fiche-id="CV8" data-index="8" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV8</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">6 · malloc/free vs GC</h3><p class="fiche-subtitle">Gérer la mémoire</p><p class="fiche-intro">Schéma pile/tas + code</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV8</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-mem"><div class="cvs-mem-block cvs-mem-stack"><div class="cvs-mem-title" style="color:#10b981">▲ Pile (Stack)</div><div class="cvs-mem-item">Variables locales, paramètres</div><div class="cvs-mem-item">Gestion <b>automatique</b> dans les 2 langages</div><div class="cvs-mem-item">C : <code>int x;</code> sur la pile</div><div class="cvs-mem-item">Java : primitifs sur la pile</div><div class="cvs-mem-item">Durée de vie = portée du bloc</div></div><div class="cvs-mem-block cvs-mem-heap"><div class="cvs-mem-title" style="color:#f59e0b">▼ Tas (Heap)</div><div class="cvs-mem-item">Objets/vecteurs alloués dynamiquement</div><div class="cvs-mem-item"><b>C :</b> <code>malloc</code> / <code>free</code> manuels</div><div class="cvs-mem-item"><b>Java :</b> <code>new</code> + <b>GC</b> automatique</div><div class="cvs-mem-item">C : le programmeur <b>doit</b> libérer</div><div class="cvs-mem-item">Java : la JVM détecte et libère seule</div></div></div><div class="cvs-hello" style="margin-top:14px"><div class="cvs-code-card"><div class="cvs-code-head c">C — malloc / free</div><div class="cvs-code-body"><span style="color:#f59e0b;font-weight:600">int</span> <span style="color:#cbd5e1">*</span><span style="color:#e2e8f0">p</span> <span style="color:#cbd5e1">=</span> <span style="color:#dcdcaa">malloc</span><span style="color:#cbd5e1">(</span><span style="color:#f59e0b;font-weight:600">sizeof</span><span style="color:#cbd5e1">(</span><span style="color:#f59e0b;font-weight:600">int</span><span style="color:#cbd5e1">)</span><span style="color:#cbd5e1">)</span><span style="color:#cbd5e1">;</span>
 <span style="color:#cbd5e1">*</span><span style="color:#e2e8f0">p</span> <span style="color:#cbd5e1">=</span> <span style="color:#fb923c">42</span><span style="color:#cbd5e1">;</span>
 <span style="color:#dcdcaa">free</span><span style="color:#cbd5e1">(</span><span style="color:#e2e8f0">p</span><span style="color:#cbd5e1">)</span><span style="color:#cbd5e1">;</span> <span style="color:#6b7280;font-style:italic">// obligatoire !</span>
 <span style="color:#6b7280;font-style:italic">// oublier free → fuite mémoire</span>
@@ -17188,7 +17254,7 @@ La **gestion de la mémoire dynamique** est la différence la plus marquante ent
 - Le coût : un léger overhead GC, et parfois des pauses imperceptibles.
 
 ### À retenir
-&gt; C : pouvoir absolu, responsabilité absolue (malloc/free, pointeurs). Java : liberté du GC, sécurité par les références. On ne plante pas, on lève une exception."></div></div></div></article><article class="fiche-card" data-fiche-id="CV9" data-index="8" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV9</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">7 · Erreur vs Exception</h3><p class="fiche-subtitle">Signaler un problème</p><p class="fiche-intro">Code + try/catch</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV9</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — code d'erreur</div><div class="cvs-code-body"><span style="color:#7dd3fc">FILE</span> <span style="color:#cbd5e1">*</span><span style="color:#e2e8f0">f</span> <span style="color:#cbd5e1">=</span> <span style="color:#dcdcaa">fopen</span><span style="color:#cbd5e1">(</span><span style="color:#fcd34d">"a.txt"</span><span style="color:#cbd5e1">,</span> <span style="color:#fcd34d">"r"</span><span style="color:#cbd5e1">)</span><span style="color:#cbd5e1">;</span>
+&gt; C : pouvoir absolu, responsabilité absolue (malloc/free, pointeurs). Java : liberté du GC, sécurité par les références. On ne plante pas, on lève une exception."></div></div></div></article><article class="fiche-card" data-fiche-id="CV9" data-index="9" style="--accent:#06b6d4"><div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#06b6d4,#06b6d488)"></div><button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)"><div class="fiche-badge" style="background-color:#06b6d415;border-color:#06b6d440;color:#06b6d4"><span class="badge-label">Fiche</span><span class="badge-num">CV9</span></div><div class="fiche-info"><h3 class="fiche-title" style="color:#06b6d4">7 · Erreur vs Exception</h3><p class="fiche-subtitle">Signaler un problème</p><p class="fiche-intro">Code + try/catch</p><div class="fiche-stats"><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">📊 Schéma</span><span class="stat-badge" style="color:#06b6d4;background:#06b6d41a;border-color:#06b6d440">☕ Visuel</span></div></div><svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="fiche-content" style="display:none"><div class="fiche-content-inner"><div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#06b6d4">☀ C vs Java — CV9</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#06b6d4;border-color:#06b6d440">📊 Masquer le schéma</button></div><div class="fiche-image-wrap"><div class="cvs-schema"><div class="cvs-hello"><div class="cvs-code-card"><div class="cvs-code-head c">C — code d'erreur</div><div class="cvs-code-body"><span style="color:#7dd3fc">FILE</span> <span style="color:#cbd5e1">*</span><span style="color:#e2e8f0">f</span> <span style="color:#cbd5e1">=</span> <span style="color:#dcdcaa">fopen</span><span style="color:#cbd5e1">(</span><span style="color:#fcd34d">"a.txt"</span><span style="color:#cbd5e1">,</span> <span style="color:#fcd34d">"r"</span><span style="color:#cbd5e1">)</span><span style="color:#cbd5e1">;</span>
 <span style="color:#f59e0b;font-weight:600">if</span> <span style="color:#cbd5e1">(</span><span style="color:#e2e8f0">f</span> <span style="color:#cbd5e1">=</span><span style="color:#cbd5e1">=</span> <span style="color:#7dd3fc">NULL</span><span style="color:#cbd5e1">)</span> <span style="color:#cbd5e1">{</span>
 <span style="color:#6b7280;font-style:italic">// gérer l'erreur</span>
 <span style="color:#f59e0b;font-weight:600">return</span> <span style="color:#cbd5e1">-</span><span style="color:#fb923c">1</span><span style="color:#cbd5e1">;</span>

@@ -1967,6 +1967,33 @@ html, body {
 .hidden-fiches-btn .hidden-count { color:var(--c-amber); }
 
 /* ============================================================
+   FICHE 47 — MEMBRES D’INSTANCE VS STATIC
+   Les images F3 → F7 reprennent exactement la largeur
+   visuelle des fiches existantes : pas de cadre/padding
+   supplémentaire autour de chaque image.
+   ============================================================ */
+.instance-static-card .fiche-subpart {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.instance-static-card .fiche-subpart-head {
+  margin-bottom: 14px;
+}
+.instance-static-card .fiche-subpart-image {
+  margin-bottom: 28px;
+}
+.instance-static-card .fiche-subpart-image img {
+  width: 100%;
+  max-width: none;
+  border-radius: 8px;
+}
+.instance-static-card .fiche-subpart:last-of-type .fiche-subpart-image {
+  margin-bottom: 28px;
+}
+
+/* ============================================================
    FICHES GROUPEES A/B/C/D
    Un seul bloc par notion ; les sous-parties apparaissent
    dans le même bloc lors de l'ouverture.
