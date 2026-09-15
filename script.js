@@ -112,32 +112,38 @@ function highlightJava(code) {
     'unsigned', 'signed', 'goto', 'volatile', 'register', 'auto',
   ]);
 
-  const escaped = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  
+  // On tokenize le code brut puis on échappe chaque morceau au moment de l'affichage.
+  // Cela évite que < et > deviennent littéralement &lt; et &gt; dans le rendu.
+  const escapeHtml = (value) => value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
   const regex = /(\/\/[^\n]*|\/\*[\s\S]*?\*\/)|("(?:[^"\\]|\\.)*")|(\b\d+\.?\d*[fLdD]?\b)|([A-Za-z_]\w*)|(\s+)|([^\s\w])/g;
   let result = '';
   let match;
   
-  while ((match = regex.exec(escaped)) !== null) {
+  while ((match = regex.exec(code)) !== null) {
     const [full, comment, str, num, word, ws, punct] = match;
     if (comment) {
-      result += '<span class="token-comment">' + comment + '</span>';
+      result += '<span class="token-comment">' + escapeHtml(comment) + '</span>';
     } else if (str) {
-      result += '<span class="token-string">' + str + '</span>';
+      result += '<span class="token-string">' + escapeHtml(str) + '</span>';
     } else if (num) {
-      result += '<span class="token-number">' + num + '</span>';
+      result += '<span class="token-number">' + escapeHtml(num) + '</span>';
     } else if (word) {
+      const safeWord = escapeHtml(word);
       if (keywords.has(word)) {
-        result += '<span class="token-keyword">' + word + '</span>';
+        result += '<span class="token-keyword">' + safeWord + '</span>';
       } else if (word[0] === word[0].toUpperCase() && word[0] !== word[0].toLowerCase()) {
-        result += '<span class="token-class">' + word + '</span>';
+        result += '<span class="token-class">' + safeWord + '</span>';
       } else {
-        result += word;
+        result += safeWord;
       }
     } else if (ws) {
       result += ws;
     } else if (punct) {
-      result += '<span class="token-punct">' + punct + '</span>';
+      result += '<span class="token-punct">' + escapeHtml(punct) + '</span>';
     }
   }
   return result;
@@ -159,6 +165,11 @@ function renderMarkdown(content, accentColor) {
       language = code.lang;
       code = code.text;
     }
+
+    // Évite le double encodage des caractères HTML dans les blocs de code
+    // (ex. Class<?> qui ne doit pas s'afficher comme Class&lt;?&gt;).
+    code = code.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+
     let highlighted;
     if (language === 'java' || language === 'c') {
       highlighted = highlightJava(code);
