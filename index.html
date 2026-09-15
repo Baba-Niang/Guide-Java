@@ -7,12 +7,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Java Baba Niang Guide Apprentissage</title>
-<meta content="Un parcours commenté de 172 fiches Java, organisé en 19 chapitres thématiques. Thème torréfaction &amp; café." name="description"/>
+<meta content="Un parcours commenté de 175 fiches Java, organisé en 21 chapitres thématiques. Thème torréfaction &amp; café." name="description"/>
 <meta content="Java, Baba Niang, fiches Java, apprentissage Java, POO, Generics, Collections, Files, enum, Date Time, JVM, JRE, JDK" name="keywords"/>
 <meta content="Baba Niang" name="author"/>
 <!-- Open Graph -->
-<meta content="Java Torréfié · 172 Fiches Récapitulatives" property="og:title"/>
-<meta content="Un parcours commenté de 172 fiches Java, du grain brut à l'extraction finale." property="og:description"/>
+<meta content="Java Torréfié · 175 Fiches Récapitulatives" property="og:title"/>
+<meta content="Un parcours commenté de 175 fiches Java, du grain brut à l'extraction finale." property="og:description"/>
 <meta content="website" property="og:type"/>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -120,12 +120,12 @@
 <div class="hero-stats">
 <div class="stat-card">
 <div class="stat-icon" style="color:#f59e0b">📖</div>
-<div class="stat-value" style="color:#f59e0b">172</div>
+<div class="stat-value" style="color:#f59e0b">175</div>
 <div class="stat-label">Fiches</div>
 </div>
 <div class="stat-card">
 <div class="stat-icon" style="color:#ea580c">⌨</div>
-<div class="stat-value" style="color:#ea580c">20</div>
+<div class="stat-value" style="color:#ea580c">21</div>
 <div class="stat-label">Chapitres</div>
 </div>
 <div class="stat-card">
@@ -198,33 +198,37 @@
 <span class="legend-dot" style="background-color:#059669"></span>
 <span class="legend-num">13</span>
 <span class="legend-label">Object</span>
-</a><a class="legend-chip" href="#generics" onclick="scrollToChapter('generics');return false;" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">
+</a><a class="legend-chip" href="#objects" onclick="scrollToChapter('objects');return false;" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">
 <span class="legend-dot" style="background-color:#7c3aed"></span>
 <span class="legend-num">14</span>
+<span class="legend-label">Objects</span>
+</a><a class="legend-chip" href="#generics" onclick="scrollToChapter('generics');return false;" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">
+<span class="legend-dot" style="background-color:#7c3aed"></span>
+<span class="legend-num">15</span>
 <span class="legend-label">Generics</span>
 </a><a class="legend-chip" href="#collections" onclick="scrollToChapter('collections');return false;" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">
 <span class="legend-dot" style="background-color:#0ea5e9"></span>
-<span class="legend-num">15</span>
+<span class="legend-num">16</span>
 <span class="legend-label">Collections</span>
 </a><a class="legend-chip" href="#comparable-comparator" onclick="scrollToChapter('comparable-comparator');return false;" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">
 <span class="legend-dot" style="background-color:#f59e0b"></span>
-<span class="legend-num">16</span>
+<span class="legend-num">17</span>
 <span class="legend-label">Comparable</span>
 </a><a class="legend-chip" href="#files" onclick="scrollToChapter('files');return false;" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">
 <span class="legend-dot" style="background-color:#ea580c"></span>
-<span class="legend-num">17</span>
+<span class="legend-num">18</span>
 <span class="legend-label">Files</span>
 </a><a class="legend-chip" href="#enum" onclick="scrollToChapter('enum');return false;" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">
 <span class="legend-dot" style="background-color:#a855f7"></span>
-<span class="legend-num">18</span>
+<span class="legend-num">19</span>
 <span class="legend-label">enum</span>
 </a><a class="legend-chip" href="#date-time" onclick="scrollToChapter('date-time');return false;" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">
 <span class="legend-dot" style="background-color:#10b981"></span>
-<span class="legend-num">19</span>
+<span class="legend-num">20</span>
 <span class="legend-label">Date/Time</span>
 </a><a class="legend-chip" href="#c-vs-java" onclick="scrollToChapter('c-vs-java');return false;" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">
 <span class="legend-dot" style="background-color:#06b6d4"></span>
-<span class="legend-num">20</span>
+<span class="legend-num">21</span>
 <span class="legend-label">C vs Java</span>
 </a></div>
 </div>
@@ -237,7 +241,7 @@
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -372,8 +376,18 @@
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -383,7 +397,7 @@
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -393,7 +407,7 @@
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -403,7 +417,7 @@
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -413,7 +427,7 @@
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -423,7 +437,7 @@
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -432,7 +446,7 @@
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -1014,7 +1028,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -1149,8 +1163,18 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -1160,7 +1184,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -1170,7 +1194,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -1180,7 +1204,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -1190,7 +1214,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -1200,7 +1224,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -1209,7 +1233,7 @@ C:\Users\User\Desktop\Java\MonProjet&gt;
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -1447,7 +1471,7 @@ La structure est toujours la même, seul le contenu change !
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -1582,8 +1606,18 @@ La structure est toujours la même, seul le contenu change !
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -1593,7 +1627,7 @@ La structure est toujours la même, seul le contenu change !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -1603,7 +1637,7 @@ La structure est toujours la même, seul le contenu change !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -1613,7 +1647,7 @@ La structure est toujours la même, seul le contenu change !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -1623,7 +1657,7 @@ La structure est toujours la même, seul le contenu change !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -1633,7 +1667,7 @@ La structure est toujours la même, seul le contenu change !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -1642,7 +1676,7 @@ La structure est toujours la même, seul le contenu change !
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -2200,7 +2234,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -2335,8 +2369,18 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -2346,7 +2390,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -2356,7 +2400,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -2366,7 +2410,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -2376,7 +2420,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -2386,7 +2430,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -2395,7 +2439,7 @@ Utilise les constantes pour les valeurs qui ne doivent jamais changer (ex : **PI
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -3164,7 +3208,7 @@ Nom utilisateur : baba
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -3299,8 +3343,18 @@ Nom utilisateur : baba
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -3310,7 +3364,7 @@ Nom utilisateur : baba
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -3320,7 +3374,7 @@ Nom utilisateur : baba
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -3330,7 +3384,7 @@ Nom utilisateur : baba
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -3340,7 +3394,7 @@ Nom utilisateur : baba
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -3350,7 +3404,7 @@ Nom utilisateur : baba
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -3359,7 +3413,7 @@ Nom utilisateur : baba
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -3457,7 +3511,7 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -3592,8 +3646,18 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -3603,7 +3667,7 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -3613,7 +3677,7 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -3623,7 +3687,7 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -3633,7 +3697,7 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -3643,7 +3707,7 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -3652,7 +3716,7 @@ Série visuelle : comprendre, déclencher, intercepter et prévenir les exceptio
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -4460,7 +4524,7 @@ System.out.println(ok);                     // true
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -4595,8 +4659,18 @@ System.out.println(ok);                     // true
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -4606,7 +4680,7 @@ System.out.println(ok);                     // true
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -4616,7 +4690,7 @@ System.out.println(ok);                     // true
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -4626,7 +4700,7 @@ System.out.println(ok);                     // true
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -4636,7 +4710,7 @@ System.out.println(ok);                     // true
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -4646,7 +4720,7 @@ System.out.println(ok);                     // true
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -4655,7 +4729,7 @@ System.out.println(ok);                     // true
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -5449,7 +5523,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -5584,8 +5658,18 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -5595,7 +5679,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -5605,7 +5689,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -5615,7 +5699,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -5625,7 +5709,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -5635,7 +5719,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -5644,7 +5728,7 @@ dès que possible !" style="--heading-color:#84cc16"></div>
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -6838,7 +6922,7 @@ Au revoir !
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -6973,8 +7057,18 @@ Au revoir !
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -6984,7 +7078,7 @@ Au revoir !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -6994,7 +7088,7 @@ Au revoir !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -7004,7 +7098,7 @@ Au revoir !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -7014,7 +7108,7 @@ Au revoir !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -7024,7 +7118,7 @@ Au revoir !
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -7033,7 +7127,7 @@ Au revoir !
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -8236,7 +8330,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -8371,8 +8465,18 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -8382,7 +8486,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -8392,7 +8496,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -8402,7 +8506,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -8412,7 +8516,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -8422,7 +8526,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -8431,7 +8535,7 @@ Quand une opération concerne directement un tableau, vérifier d’abord si `ja
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -9356,7 +9460,7 @@ final class Utilitaire {
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -9491,8 +9595,18 @@ final class Utilitaire {
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -9502,7 +9616,7 @@ final class Utilitaire {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -9512,7 +9626,7 @@ final class Utilitaire {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -9522,7 +9636,7 @@ final class Utilitaire {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -9532,7 +9646,7 @@ final class Utilitaire {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -9542,7 +9656,7 @@ final class Utilitaire {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -9551,7 +9665,7 @@ final class Utilitaire {
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -10056,17 +10170,65 @@ class Enfant extends Parent {
 <div class="fiche-image-wrap">
 <img alt="Fiche Java 55 — instanceof" loading="lazy" src="fiches/ficheAjout-55.png"/>
 </div><div class="fiche-markdown" data-content-raw="### Comprendre
-`instanceof` permet de vérifier si un objet est d’un type donné avant de l’utiliser comme ce type.
+`instanceof` est un opérateur qui répond à une question précise : **« Cet objet est-il compatible avec ce type ? »**
+
+```java
+objet instanceof Type
+```
+
+Le résultat est toujours un `boolean` : `true` ou `false`.
 
 ### Pourquoi ?
-Dans un contexte d’héritage, un objet peut être référencé avec un type parent. `instanceof` permet de vérifier le type compatible avant un traitement spécifique.
+Avec l’héritage, une référence peut avoir un type parent alors que l’objet réel est d’une classe enfant.
+
+```java
+Personne p = new Etudiant();
+```
+
+La référence `p` est de type `Personne`, mais l’objet réel est un `Etudiant`. On peut donc tester :
+
+```java
+p instanceof Etudiant
+```
+
+Le résultat est `true`.
+
+### Exemple complet expliqué
+```java
+Etudiant e = new Etudiant(&quot;Ali&quot;, 14);
+
+System.out.println(e instanceof Etudiant); // true
+System.out.println(e instanceof Personne); // true
+System.out.println(e instanceof String);   // false
+```
+
+- `e instanceof Etudiant` → vrai : `e` désigne bien un `Etudiant`.
+- `e instanceof Personne` → vrai si `Etudiant` hérite de `Personne`.
+- `e instanceof String` → faux : l’objet n’est pas compatible avec `String`.
+
+### Cas particulier : `null`
+```java
+Etudiant e = null;
+System.out.println(e instanceof Etudiant); // false
+```
+
+`null` ne représente aucun objet. Le test retourne donc `false`.
+
+### Classe ou interface
+`instanceof` peut également tester une interface :
+
+```java
+if (objet instanceof Comparable) {
+    System.out.println(&quot;L&#x27;objet est compatible avec Comparable&quot;);
+}
+```
 
 ### À retenir
-- `objet instanceof Type` → **vérifie le type**
-- Résultat → **`true` ou `false`**
-- Si le résultat est **`false`** → l’objet est `null` **ou** ne correspond pas à la classe (ou interface) testée.
+`instanceof` **ne vérifie pas si deux variables désignent le même objet**. Il vérifie la compatibilité de l’objet avec un type.
 
-&gt; `instanceof` répond à : **« Cet objet est-il de ce type ? »**"></div>
+&gt; `==` → même référence ?  
+&gt; `equals()` → égalité logique ?  
+&gt; `instanceof` → compatible avec ce type ?"></div>
 </div>
 </div>
 </article><article class="fiche-card fiche-group-card" data-fiche-id="56" data-index="5" style="--accent:#0284c7">
@@ -10765,7 +10927,7 @@ public class Main {
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <div>
 <div class="sidebar-brand-text">Java Torréfié</div>
-<div class="sidebar-brand-sub">172 · 19 ch.</div>
+<div class="sidebar-brand-sub">175 · 21 ch.</div>
 </div>
 </div>
 <ul class="sidebar-list">
@@ -10900,8 +11062,18 @@ public class Main {
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -10911,7 +11083,7 @@ public class Main {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -10921,7 +11093,7 @@ public class Main {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -10931,7 +11103,7 @@ public class Main {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -10941,7 +11113,7 @@ public class Main {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -10951,7 +11123,7 @@ public class Main {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -10960,7 +11132,7 @@ public class Main {
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -12133,7 +12305,7 @@ public static void main(String[] args) {
 <nav>
 <div class="sidebar-brand">
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
-<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">172 · 19 ch.</div></div>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
 </div>
 <ul class="sidebar-list">
 <li>
@@ -12267,8 +12439,18 @@ public static void main(String[] args) {
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -12278,7 +12460,7 @@ public static void main(String[] args) {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -12288,7 +12470,7 @@ public static void main(String[] args) {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -12298,7 +12480,7 @@ public static void main(String[] args) {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -12308,7 +12490,7 @@ public static void main(String[] args) {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -12318,7 +12500,7 @@ public static void main(String[] args) {
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -12327,7 +12509,7 @@ public static void main(String[] args) {
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -12413,36 +12595,118 @@ public static void main(String[] args) {
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#059669,#05966988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
-<span class="badge-label">Fiche</span>
-<span class="badge-num">E2</span>
+<span class="badge-label">Fiche</span><span class="badge-num">E2</span>
 </div>
 <div class="fiche-info">
 <h3 class="fiche-title" style="color:#059669">equals()</h3>
 <p class="fiche-subtitle">Comparer le contenu logique de deux objets</p>
-<p class="fiche-intro">1 fiche visuelle</p>
-<div class="fiche-stats"><span class="stat-badge" style="color:#059669;background:#0596691a;border-color:#05966940">🖼 1 fiche visuelle</span><span class="stat-badge" style="color:#059669;background:#0596691a;border-color:#05966940">☕ Visuel</span></div>
+<p class="fiche-intro">2 fiches visuelles — notion + suite</p>
+<div class="fiche-stats"><span class="stat-badge" style="color:#059669;background:#0596691a;border-color:#05966940">🖼 2 fiches visuelles</span><span class="stat-badge" style="color:#059669;background:#0596691a;border-color:#05966940">☕ Visuel</span></div>
 </div>
 <svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#059669" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
 <div class="fiche-content" style="display:none">
 <div class="fiche-content-inner">
+
 <div class="fiche-toolbar">
 <h4 class="toolbar-title" style="color:#059669">☕ Fiche visuelle — E2</h4>
 <button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#059669;border-color:#05966940">🖼 Masquer l'image</button>
 </div>
 <div class="fiche-image-wrap">
 <img alt="Fiche Java E2 — equals()" loading="lazy" src="fiches/nouveaux/05-object/E2.png"/>
-</div><div class="fiche-markdown" data-content-raw="### Comprendre
-`equals()` sert à définir l’égalité logique entre deux objets. Deux objets peuvent être différents en mémoire tout en représentant la même valeur.
+</div>
+<div class="fiche-markdown" data-content-raw="### Comprendre
+`equals()` est une méthode héritée de `java.lang.Object`. Elle sert à définir la règle qui permet de décider si deux objets doivent être considérés comme **logiquement égaux**.
 
-### Point important
-Une bonne redéfinition compare les attributs qui déterminent l’identité logique de l’objet. Elle doit respecter le contrat de `Object.equals()`.
+Par défaut, la version héritée de `Object` compare l’identité des objets : deux références sont égales lorsqu’elles désignent exactement le même objet.
+
+Quand une classe doit considérer deux objets différents en mémoire comme égaux parce qu’ils représentent les mêmes informations importantes, on **redéfinit `equals()`** pour définir cette règle.
+
+### Pourquoi ?
+Deux objets peuvent contenir les mêmes données tout en étant deux objets distincts. `equals()` permet donc de répondre à une question précise :
+
+**« Est-ce que ces deux objets représentent la même valeur logique ? »**
+
+La classe décide elle-même quels attributs doivent être pris en compte pour cette égalité.
+
+### Lire l’exemple présent sur la fiche
+La fiche montre une redéfinition de `equals(Object obj)` dans une classe `Etudiant`.
+
+- `this == obj` vérifie d’abord si les deux références désignent déjà le même objet. Si oui, le résultat est immédiatement `true`.
+- `obj == null` vérifie ensuite qu’un objet existe réellement à comparer. Si `obj` vaut `null`, le résultat est `false`.
+- `obj instanceof Etudiant` vérifie que l’objet reçu peut être considéré comme un `Etudiant`.
+- Le cast permet ensuite de manipuler l’objet reçu comme un `Etudiant`.
+- Les attributs choisis par la classe sont enfin comparés pour déterminer l’égalité logique.
+
+**L’exemple de la fiche est volontairement la référence du code : cette explication sert à comprendre chaque étape sans recopier un deuxième exemple.**
 
 ### À retenir
-&gt; `equals()` compare le **contenu logique**, pas simplement l’adresse mémoire."></div>
+- `==` → vérifie si deux références désignent **le même objet**.
+- `equals()` → vérifie si deux objets sont **logiquement égaux**, selon la règle définie par leur classe.
+- Redéfinir `equals()` permet donc de définir une règle d’égalité adaptée à la classe.
+
+La fiche suivante est la **suite directe de E2** : elle montre ce qui se passe lorsqu’un attribut comparé peut lui-même valoir `null`."></div>
+
+<div class="fiche-inline-continuation" aria-label="Suite de la fiche E2">
+<div class="fiche-continuation-heading">
+<span class="fiche-continuation-label">SUITE DE E2</span>
+<h4>equals() — Gestion du null</h4>
+</div>
+
+<div class="fiche-toolbar">
+<h4 class="toolbar-title" style="color:#059669">☕ Fiche visuelle — Suite E2</h4>
+<button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#059669;border-color:#05966940">🖼 Masquer l'image</button>
+</div>
+<div class="fiche-image-wrap">
+<img alt="Suite de la fiche Java E2 — equals() : gestion du null" loading="lazy" src="fiches/nouveaux/05-object/Suite-E2.png"/>
+</div>
+<div class="fiche-markdown" data-content-raw="### Comprendre
+Cette fiche est la **suite directe de E2**. Elle montre un problème fréquent : un attribut d’un objet peut lui-même contenir la valeur `null`.
+
+Dans une comparaison comme `this.nom.equals(e.nom)`, Java doit appeler `equals()` sur `this.nom`. Si `this.nom` vaut `null`, aucun objet n’est disponible pour recevoir l’appel. Java provoque alors une `NullPointerException`.
+
+Le problème vient donc de **l’appel d’une méthode sur une référence `null`**, pas de la méthode `equals()` elle-même.
+
+### Pourquoi ?
+Dans l’exemple de la fiche, `nom` et `prenom` sont des références vers des `String`. Une référence d’objet peut contenir `null`.
+
+La comparaison directe suppose que l’attribut situé à gauche du point contient toujours un objet. Cette hypothèse n’est pas sûre.
+
+### Lire l’exemple présent sur la fiche
+La fiche montre la correction de la comparaison des attributs :
+
+- pour `nom` et `prenom`, `Objects.equals(...)` permet de comparer les valeurs même lorsqu’une valeur est `null` ;
+- pour `age`, la comparaison avec `==` est adaptée lorsqu’il s’agit d’un `int`, car un type primitif ne peut pas contenir `null`.
+
+Les cas importants à comprendre sont :
+
+- `null` avec `null` → `true`
+- `null` avec une valeur → `false`
+- deux valeurs égales → `true`
+
+### Le lien avec E2
+Il faut distinguer deux rôles.
+
+**`equals()` de `Etudiant`** définit **quels attributs rendent deux étudiants égaux**.
+
+**`Objects.equals()`** sécurise la comparaison des valeurs de ces attributs lorsqu’elles peuvent être `null`.
+
+Donc `Objects.equals()` ne remplace pas la redéfinition de `equals()`. Il aide à écrire une redéfinition de `equals()` qui reste sûre lorsque certains champs sont des références pouvant être nulles.
+
+### À retenir
+> `equals()` définit la règle d’égalité logique de l’objet.
+>
+> `Objects.equals(a, b)` permet de comparer deux valeurs en gérant correctement `null`.
+>
+> Un type primitif comme `int` ne peut pas contenir `null`.
+
+**Suite logique :** après avoir appris à définir l’égalité avec `equals()`, il faut savoir comparer correctement les attributs utilisés par cette égalité."></div>
+</div>
+
 </div>
 </div>
-</article><article class="fiche-card" data-fiche-id="E3" data-index="2" style="--accent:#059669">
+</article>
+<article class="fiche-card" data-fiche-id="E3" data-index="2" style="--accent:#059669">
 <div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#059669,#05966988)"></div>
 <button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
 <div class="fiche-badge" style="background-color:#05966915;border-color:#05966940;color:#059669">
@@ -12567,26 +12831,56 @@ Deux objets `Personne` contenant les mêmes données peuvent être différents a
 <div class="fiche-image-wrap">
 <img alt="Fiche Java E6 — getClass()" loading="lazy" src="fiches/nouveaux/05-object/E6.png"/>
 </div><div class="fiche-markdown" data-content-raw="### Comprendre
-`getClass()` permet de connaître la **classe exacte** de l’objet courant ou d’un objet donné.
+`getClass()` est une méthode héritée de `java.lang.Object`. Elle permet de connaître **la classe réelle exacte de l’objet sur lequel elle est appelée**.
+
+```java
+Class&lt;?&gt; classe = objet.getClass();
+```
+
+Le résultat n’est pas une chaîne de caractères : c’est un objet représentant la classe, de type `Class&lt;?&gt;`.
 
 ### Pourquoi ?
-Lorsqu’on veut comparer les classes exactes de deux objets, `getClass()` permet de vérifier si elles sont identiques.
+Le type écrit dans une variable et la classe réelle de l’objet peuvent être différents à cause de l’héritage.
 
-### Syntaxe
 ```java
-nomObjet.getClass()
+Personne p = new Etudiant();
 ```
 
-### Type de retour
+Ici, `p` est une référence de type `Personne`, mais l’objet créé est réellement un `Etudiant`.
+
 ```java
-Class&lt;?&gt;
+System.out.println(p.getClass());
 ```
+
+Le résultat correspond à la classe réelle de l’objet : `class Etudiant`.
+
+### Exemple expliqué
+```java
+Etudiant e = new Etudiant(&quot;Ali&quot;, 14);
+Class&lt;?&gt; c = e.getClass();
+
+System.out.println(c);
+System.out.println(c == Etudiant.class);
+```
+
+- `e.getClass()` demande à l’objet `e` quelle est sa classe réelle.
+- `c` reçoit cette information sous forme d’un objet `Class&lt;?&gt;`.
+- La première ligne affiche la représentation de la classe.
+- La seconde vérifie que la classe obtenue est bien `Etudiant`.
+
+### Comparer deux classes exactes
+```java
+if (a.getClass() == b.getClass()) {
+    System.out.println(&quot;Même classe exacte&quot;);
+}
+```
+
+Cette comparaison porte sur la **classe exacte**, contrairement à `instanceof` qui teste la compatibilité avec un type.
 
 ### À retenir
-- `objet.getClass()` → **renvoie sa classe exacte**
-- `getClass() != objet.getClass()` → **classes différentes**
+&gt; `getClass()` → « Quelle est la classe exacte de cet objet ? »
 
-&gt; `getClass()` répond à : **« De quelle classe exacte est cet objet ? »**"></div>
+`getClass()` est notamment utile pour comprendre le type réel d’un objet, comparer des classes exactes et diagnostiquer un comportement."></div>
 </div>
 </div>
 </article>
@@ -12595,12 +12889,12 @@ Class&lt;?&gt;
 </section>
 </div>
 </section>
-<section class="slide slide-chapter" data-chapter-id="generics" data-slide-index="14" id="slide-generics">
+<section class="slide slide-chapter" data-chapter-id="objects" data-slide-index="14" id="slide-objects">
 <aside class="sidebar">
 <nav>
 <div class="sidebar-brand">
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
-<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">172 · 19 ch.</div></div>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
 </div>
 <ul class="sidebar-list">
 <li>
@@ -12734,8 +13028,18 @@ Class&lt;?&gt;
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -12745,7 +13049,7 @@ Class&lt;?&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -12755,7 +13059,7 @@ Class&lt;?&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -12765,7 +13069,7 @@ Class&lt;?&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -12775,7 +13079,7 @@ Class&lt;?&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -12785,7 +13089,7 @@ Class&lt;?&gt;
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -12794,7 +13098,496 @@ Class&lt;?&gt;
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
+<div class="sidebar-text">
+<div class="sidebar-title">C vs Java</div>
+<div class="sidebar-count">10 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#06b6d4" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+</ul>
+<div class="sidebar-footer">← → pour naviguer<br/>Clique une fiche pour la déplier.</div>
+</nav>
+</aside>
+<div class="chapters-wrap">
+<section class="chapter-section" id="objects" style="--accent:#7c3aed">
+<div class="chapter-header">
+<div class="chapter-line" style="background:linear-gradient(to right,transparent,#7c3aed80,transparent)"></div>
+<div class="chapter-header-inner">
+<div class="chapter-num" style="color:#7c3aed;text-shadow:0 0 30px #7c3aed40">14</div>
+<div class="chapter-meta">
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed10">Chapitre 14</span><span class="chapter-count">3 fiches</span></div>
+<h2 class="chapter-title" style="color:#7c3aed">java.util.Objects</h2>
+<p class="chapter-subtitle">Classe utilitaire pour manipuler les objets de manière sûre et pratique</p>
+</div>
+</div>
+<div class="chapter-gradient-bar" style="background:linear-gradient(to right,#7c3aed,#7c3aed40 30%,transparent)"></div>
+</div>
+
+<div class="objects-note" role="note" aria-label="Transition vers java.util.Objects">
+  <div class="objects-note-header">
+    <div class="objects-note-icon" aria-hidden="true">→</div>
+    <div class="objects-note-title">Après <code>java.lang.Object</code></div>
+    <span class="objects-note-badge">Classe utilitaire</span>
+  </div>
+  <div class="objects-note-body">
+    <p>Maintenant que nous savons redéfinir les méthodes de <code>Object</code>, découvrons <strong><code>java.util.Objects</code></strong>, une classe utilitaire qui facilite le travail avec les objets.</p>
+    <p><strong>Object</strong> est la classe mère commune. <strong>Objects</strong> fournit des méthodes pratiques pour comparer, calculer un hash ou contrôler les valeurs <code>null</code>.</p>
+  </div>
+</div>
+
+<div class="objects-transition" aria-label="Transition de Object vers Objects">
+  <div class="objects-transition-card">Object → redéfinir les méthodes</div>
+  <div class="objects-transition-arrow" aria-hidden="true">→</div>
+  <div class="objects-transition-card">Objects → les utiliser plus facilement</div>
+</div>
+
+<div class="fiches-list">
+<article class="fiche-card" data-fiche-id="O1" data-index="0" style="--accent:#7c3aed">
+<div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
+<button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
+<div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed"><span class="badge-label">Fiche</span><span class="badge-num">O1</span></div>
+<div class="fiche-info">
+<h3 class="fiche-title" style="color:#7c3aed">Objects.equals()</h3>
+<p class="fiche-subtitle">Comparer deux valeurs ou deux objets en sécurité</p>
+<p class="fiche-intro">1 fiche visuelle</p>
+<div class="fiche-stats"><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">🖼 1 fiche visuelle</span><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">⭐⭐⭐⭐⭐</span></div>
+</div>
+<svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<div class="fiche-content" style="display:none"><div class="fiche-content-inner">
+<div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#7c3aed">☕ Fiche visuelle — O1</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#7c3aed;border-color:#7c3aed40">🖼 Masquer l'image</button></div>
+<div class="fiche-image-wrap"><img alt="Fiche Java O1 — Objects.equals()" loading="lazy" src="fiches/nouveaux/06-objects/O1.png"/></div>
+<div class="fiche-markdown" data-content-raw="### Comprendre
+`Objects.equals(a, b)` appartient à `java.util.Objects`. Elle permet de comparer deux valeurs ou deux objets en gérant correctement le cas `null`.
+
+Elle est utile lorsqu’une référence peut être absente et que l’on veut éviter d’écrire une vérification manuelle avant chaque appel à `equals()`.
+
+### Pourquoi `a.equals(b)` peut poser problème ?
+Avec :
+```java
+a.equals(b);
+```
+si `a` vaut `null`, Java ne peut pas appeler une méthode sur `null`. Une `NullPointerException` est alors levée.
+
+`Objects.equals(a, b)` est conçu pour traiter ce cas sans que l’appelant ait à tester `a` lui-même.
+
+### Fonctionnement étape par étape
+On peut comprendre la méthode avec cette logique :
+
+1. `a == b` → les deux références désignent la même chose : résultat `true`. Cela inclut `null` / `null`.
+2. Si `a` vaut `null` alors que `b` est différent, résultat `false`.
+3. Sinon, `a` n’est pas `null` : la méthode appelle `a.equals(b)`.
+
+Le dernier point est essentiel : **`Objects.equals()` délègue la comparaison à `equals()` de la première valeur lorsqu’elle n’est pas `null`**.
+
+### Exemple complet
+```java
+import java.util.Objects;
+
+class Etudiant {
+    String nom;
+
+    Etudiant(String nom) {
+        this.nom = nom;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Etudiant)) return false;
+
+        Etudiant autre = (Etudiant) obj;
+        return Objects.equals(this.nom, autre.nom);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Etudiant e1 = new Etudiant(null);
+        Etudiant e2 = new Etudiant(null);
+        Etudiant e3 = new Etudiant(&quot;Ali&quot;);
+
+        System.out.println(Objects.equals(e1, e2));
+        System.out.println(Objects.equals(e1.nom, e3.nom));
+    }
+}
+```
+
+### Explication de l’exemple
+**Premier affichage :** `Objects.equals(e1, e2)`
+
+`e1` et `e2` ne sont pas la même référence, donc la méthode ne s’arrête pas à l’étape 1. `e1` n’est pas `null`, elle utilise donc `e1.equals(e2)`. La méthode `equals()` d’`Etudiant` compare alors les noms. Les deux noms valent `null`, donc `Objects.equals(null, null)` retourne `true`.
+
+**Deuxième affichage :** `Objects.equals(e1.nom, e3.nom)`
+
+`e1.nom` vaut `null` et `e3.nom` vaut `&quot;Ali&quot;`. Le résultat est donc `false`, sans `NullPointerException`.
+
+### Attention : `Objects.equals()` ne compare pas les champs tout seul
+Si on écrit :
+```java
+Objects.equals(obj1, obj2);
+```
+la méthode ne parcourt pas tous les attributs de `obj1` et `obj2`. Si la classe redéfinit `equals()`, cette redéfinition définit la comparaison. Si elle ne le fait pas, l’implémentation héritée de `Object` utilise la comparaison d’identité.
+
+### À retenir
+> `Objects.equals(a, b)` → comparaison sûre, même lorsque `null` est possible.
+> 
+> Si `a` n’est pas `null`, la méthode s’appuie sur `a.equals(b)`.
+> 
+> Pour une classe personnalisée, c’est donc `equals()` qui définit ce que signifie « égal »." ></div>
+</div></div>
+</article>
+
+<article class="fiche-card" data-fiche-id="O2" data-index="1" style="--accent:#7c3aed">
+<div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
+<button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
+<div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed"><span class="badge-label">Fiche</span><span class="badge-num">O2</span></div>
+<div class="fiche-info">
+<h3 class="fiche-title" style="color:#7c3aed">Objects.hash()</h3>
+<p class="fiche-subtitle">Calculer un hash cohérent à partir de plusieurs valeurs</p>
+<p class="fiche-intro">1 fiche visuelle</p>
+<div class="fiche-stats"><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">🖼 1 fiche visuelle</span><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">⭐⭐⭐⭐⭐</span></div>
+</div>
+<svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<div class="fiche-content" style="display:none"><div class="fiche-content-inner">
+<div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#7c3aed">☕ Fiche visuelle — O2</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#7c3aed;border-color:#7c3aed40">🖼 Masquer l'image</button></div>
+<div class="fiche-image-wrap"><img alt="Fiche Java O2 — Objects.hash()" loading="lazy" src="fiches/nouveaux/06-objects/O2.png"/></div>
+<div class="fiche-markdown" data-content-raw="### Comprendre
+`Objects.hash(...)` calcule un hash à partir de plusieurs valeurs.
+
+### Pourquoi ?
+Il est pratique pour construire `hashCode()` à partir des mêmes attributs utilisés dans `equals()`.
+
+### Exemple
+```java
+@Override
+public int hashCode() {
+    return Objects.hash(nom, age);
+}
+```
+
+### Important
+Si `equals()` considère deux objets égaux, leur `hashCode()` doit retourner la même valeur. Utiliser les mêmes attributs dans `equals()` et `Objects.hash(...)` aide à respecter ce contrat.
+
+### À retenir
+`Objects.hash(a, b, c)` → construit un hash à partir de plusieurs valeurs.  
+Très utile avec `equals()` + `hashCode()` et les collections comme `HashSet` et `HashMap`." ></div>
+</div></div>
+</article>
+
+<article class="fiche-card" data-fiche-id="O3" data-index="2" style="--accent:#7c3aed">
+<div class="fiche-accent-bar" style="background:linear-gradient(to bottom,#7c3aed,#7c3aed88)"></div>
+<button aria-expanded="false" class="fiche-header" onclick="toggleFiche(this)">
+<div class="fiche-badge" style="background-color:#7c3aed15;border-color:#7c3aed40;color:#7c3aed"><span class="badge-label">Fiche</span><span class="badge-num">O3</span></div>
+<div class="fiche-info">
+<h3 class="fiche-title" style="color:#7c3aed">Objects.requireNonNull()</h3>
+<p class="fiche-subtitle">Vérifier immédiatement qu’une valeur n’est pas null</p>
+<p class="fiche-intro">1 fiche visuelle</p>
+<div class="fiche-stats"><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">🖼 1 fiche visuelle</span><span class="stat-badge" style="color:#7c3aed;background:#7c3aed1a;border-color:#7c3aed40">⭐⭐⭐⭐</span></div>
+</div>
+<svg class="fiche-chevron" fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<div class="fiche-content" style="display:none"><div class="fiche-content-inner">
+<div class="fiche-toolbar"><h4 class="toolbar-title" style="color:#7c3aed">☕ Fiche visuelle — O3</h4><button class="img-toggle-btn" onclick="toggleImage(this)" style="color:#7c3aed;border-color:#7c3aed40">🖼 Masquer l'image</button></div>
+<div class="fiche-image-wrap"><img alt="Fiche Java O3 — Objects.requireNonNull()" loading="lazy" src="fiches/nouveaux/06-objects/O3.png"/></div>
+<div class="fiche-markdown" data-content-raw="### Comprendre
+`Objects.requireNonNull(...)` appartient à `java.util.Objects`. Elle sert à vérifier immédiatement qu’une référence **n’est pas `null`** lorsqu’une valeur est obligatoire pour continuer l’exécution.
+
+Si la valeur est non nulle, la méthode la **retourne telle quelle**. Si elle vaut `null`, elle lève immédiatement une `NullPointerException`.
+
+### Pourquoi utiliser cette méthode ?
+Une valeur obligatoire doit idéalement être contrôlée au moment où elle entre dans notre code. Sinon, un objet peut être créé avec un état invalide et l’erreur peut apparaître beaucoup plus loin, ce qui rend le problème plus difficile à localiser.
+
+`requireNonNull()` permet donc d’exprimer clairement une précondition : **« cette valeur ne doit pas être `null` »**.
+
+### Exemple complet
+```java
+import java.util.Objects;
+
+class Etudiant {
+    private String nom;
+
+    public Etudiant(String nom) {
+        this.nom = Objects.requireNonNull(nom);
+    }
+
+    public String getNom() {
+        return nom;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Etudiant e = new Etudiant(&quot;Ali&quot;);
+        System.out.println(e.getNom());
+
+        Etudiant erreur = new Etudiant(null);
+        System.out.println(erreur.getNom());
+    }
+}
+```
+
+### Explication de l’exemple
+**1. Création avec `&quot;Ali&quot;`**
+
+`new Etudiant(&quot;Ali&quot;)` appelle le constructeur. Le paramètre `nom` contient une valeur non nulle. `Objects.requireNonNull(nom)` vérifie la valeur puis retourne cette même valeur. Elle peut donc être affectée à `this.nom`.
+
+Le premier `println` affiche `Ali`.
+
+**2. Création avec `null`**
+
+`new Etudiant(null)` appelle encore le constructeur, mais cette fois `nom` vaut `null`. `requireNonNull()` détecte immédiatement le problème et lève une `NullPointerException`.
+
+L’instruction suivante n’est donc pas exécutée normalement, car l’exception interrompt le déroulement si elle n’est pas interceptée.
+
+### Ajouter un message explicite
+On peut indiquer ce qui est obligatoire :
+```java
+this.nom = Objects.requireNonNull(nom, &quot;Le nom est obligatoire&quot;);
+```
+
+Si `nom` vaut `null`, le message permet d’identifier directement la précondition qui n’a pas été respectée.
+
+### Ce que retourne la méthode
+```java
+String valeur = Objects.requireNonNull(nom);
+```
+
+- `nom != null` → `valeur` reçoit exactement la même référence que `nom`.
+- `nom == null` → une `NullPointerException` est levée ; aucune valeur n’est retournée.
+
+La méthode **ne crée pas de copie** et ne transforme pas la donnée : elle vérifie puis retourne la valeur reçue.
+
+### Quand l’utiliser ?
+Elle convient aux paramètres, champs ou dépendances qui sont réellement obligatoires. Si `null` est une valeur normale et acceptable dans le fonctionnement de l’application, cette vérification ne doit pas être utilisée pour l’interdire artificiellement.
+
+### À retenir
+> `Objects.requireNonNull(valeur)` → **vérifier maintenant qu’une valeur obligatoire n’est pas `null`**.
+> 
+> valeur non nulle → elle est retournée ;
+> 
+> valeur `null` → `NullPointerException` immédiate ;
+> 
+> deuxième argument → permet d’ajouter un message explicite.
+" ></div>
+</div></div>
+</article>
+</div>
+</section>
+</div>
+</section>
+<section class="slide slide-chapter" data-chapter-id="generics" data-slide-index="15" id="slide-generics">
+<aside class="sidebar">
+<nav>
+<div class="sidebar-brand">
+<svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
+</div>
+<ul class="sidebar-list">
+<li>
+<a class="sidebar-item" data-chapter="fondations" href="#fondations" style="--accent:#f59e0b">
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">01</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Fondations &amp; Environnement</div>
+<div class="sidebar-count">6 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#f59e0b" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="premier-programme" href="#premier-programme" style="--accent:#ea580c">
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">02</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Premier Programme &amp; Structure</div>
+<div class="sidebar-count">2 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#ea580c" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="variables-types" href="#variables-types" style="--accent:#10b981">
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">03</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Variables &amp; Types</div>
+<div class="sidebar-count">4 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#10b981" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="commentaires-strings" href="#commentaires-strings" style="--accent:#0ea5e9">
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">04</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Commentaires, Strings &amp; Saisie</div>
+<div class="sidebar-count">5 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#0ea5e9" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="exceptions" href="#exceptions" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">05</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Exceptions &amp; Gestion des erreurs</div>
+<div class="sidebar-count">1 fiche</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="operateurs" href="#operateurs" style="--accent:#ec4899">
+<span class="sidebar-num" style="color:#ec4899;border-color:#ec489940;background-color:#ec489908">06</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Opérateurs</div>
+<div class="sidebar-count">7 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#ec4899" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="conditions" href="#conditions" style="--accent:#84cc16">
+<span class="sidebar-num" style="color:#84cc16;border-color:#84cc1640;background-color:#84cc1608">07</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Structures Conditionnelles</div>
+<div class="sidebar-count">6 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#84cc16" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="boucles" href="#boucles" style="--accent:#a855f7">
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">08</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Boucles</div>
+<div class="sidebar-count">8 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#a855f7" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="tableaux" href="#tableaux" style="--accent:#d97706">
+<span class="sidebar-num" style="color:#d97706;border-color:#d9770640;background-color:#d9770608">09</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Tableaux</div>
+<div class="sidebar-count">15 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#d97706" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="poo-fondamentaux" href="#poo-fondamentaux" style="--accent:#059669">
+<span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">10</span>
+<div class="sidebar-text">
+<div class="sidebar-title">POO — Fondamentaux</div>
+<div class="sidebar-count">8 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#059669" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="poo-avance" href="#poo-avance" style="--accent:#0284c7">
+<span class="sidebar-num" style="color:#0284c7;border-color:#0284c740;background-color:#0284c708">11</span>
+<div class="sidebar-text">
+<div class="sidebar-title">POO — Avancé</div>
+<div class="sidebar-count">11 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#0284c7" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="exceptions-cours-complet" href="#exceptions-cours-complet" style="--accent:#dc2626">
+<span class="sidebar-num" style="color:#dc2626;border-color:#dc262640;background-color:#dc262608">12</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Exceptions — Cours complet</div>
+<div class="sidebar-count">6 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#dc2626" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="object" href="#object" style="--accent:#059669">
+<span class="sidebar-num" style="color:#059669;border-color:#05966940;background-color:#05966908">13</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Object</div>
+<div class="sidebar-count">6 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#059669" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Generics</div>
+<div class="sidebar-count">17 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Collections</div>
+<div class="sidebar-count">42 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#0ea5e9" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Comparable / Comparator</div>
+<div class="sidebar-count">8 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#f59e0b" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Files</div>
+<div class="sidebar-count">10 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#ea580c" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
+<div class="sidebar-text">
+<div class="sidebar-title">enum</div>
+<div class="sidebar-count">4 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#a855f7" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
+<div class="sidebar-text">
+<div class="sidebar-title">Date &amp; Time</div>
+<div class="sidebar-count">6 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#10b981" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li><li>
+<a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -12811,9 +13604,9 @@ Class&lt;?&gt;
 <div class="chapter-header">
 <div class="chapter-line" style="background:linear-gradient(to right,transparent,#7c3aed80,transparent)"></div>
 <div class="chapter-header-inner">
-<div class="chapter-num" style="color:#7c3aed;text-shadow:0 0 30px #7c3aed40">14</div>
+<div class="chapter-num" style="color:#7c3aed;text-shadow:0 0 30px #7c3aed40">15</div>
 <div class="chapter-meta">
-<div class="chapter-badge-row"><span class="chapter-badge" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed10">Chapitre 14</span><span class="chapter-count">17 fiches</span></div>
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed10">Chapitre 15</span><span class="chapter-count">17 fiches</span></div>
 <h2 class="chapter-title" style="color:#7c3aed">Generics</h2>
 <p class="chapter-subtitle">Écrire du code réutilisable tout en gardant les types</p>
 </div>
@@ -12845,13 +13638,64 @@ Class&lt;?&gt;
 <div class="fiche-image-wrap">
 <img alt="Fiche Java B1A — Le problème des types fixes" loading="lazy" src="fiches/nouveaux/02-generiques/B1A.png"/>
 </div><div class="fiche-markdown" data-content-raw="### Comprendre
-Une classe non générique impose souvent un type précis. Par exemple, une classe prévue pour `Integer` ne peut pas naturellement stocker un `String` sans modifier sa conception.
+`Objects.requireNonNull(objet)` vérifie qu’une valeur n’est **pas `null`**.
 
-### Le problème
-Pour réutiliser la même structure avec plusieurs types, on serait tenté de dupliquer les classes ou de passer par `Object`, ce qui entraîne des conversions et moins de sécurité.
+Si la valeur est non nulle, elle est retournée. Si elle vaut `null`, la méthode lance immédiatement une `NullPointerException`.
+
+```java
+import java.util.Objects;
+```
+
+### Pourquoi ?
+Certaines données sont obligatoires. Il vaut mieux détecter leur absence **au moment où elles sont reçues** plutôt que de laisser le programme continuer et provoquer une erreur plus loin.
+
+### Exemple complet
+```java
+class Etudiant {
+    private String nom;
+
+    public Etudiant(String nom) {
+        this.nom = Objects.requireNonNull(nom);
+    }
+}
+```
+
+### Explication
+Si on écrit :
+
+```java
+Etudiant e = new Etudiant(&quot;Ali&quot;);
+```
+
+`nom` n’est pas `null`, donc `requireNonNull()` retourne `&quot;Ali&quot;` et l’affectation se fait normalement.
+
+Si on écrit :
+
+```java
+Etudiant e = new Etudiant(null);
+```
+
+la vérification échoue immédiatement et une `NullPointerException` est levée dans le constructeur.
+
+### Ajouter un message explicite
+```java
+this.nom = Objects.requireNonNull(nom, &quot;Le nom est obligatoire&quot;);
+```
+
+Le message permet de comprendre directement quelle valeur obligatoire manque.
+
+### Ce que la méthode retourne
+```java
+String valeur = Objects.requireNonNull(nom);
+```
+
+- `nom != null` → `valeur` reçoit `nom`.
+- `nom == null` → aucune valeur n’est retournée, car une exception est levée.
 
 ### À retenir
-&gt; Les génériques permettent de rendre une structure **réutilisable tout en gardant le typage**."></div>
+&gt; `requireNonNull()` = **« cette valeur est obligatoire : vérifions-le maintenant. »**
+
+La méthode est utile pour valider rapidement les préconditions et éviter qu’un `null` ne circule inutilement dans le programme."></div>
 </div>
 </div>
 </article><article class="fiche-card" data-fiche-id="B1B" data-index="1" style="--accent:#7c3aed">
@@ -13391,12 +14235,12 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </section>
 </div>
 </section>
-<section class="slide slide-chapter" data-chapter-id="collections" data-slide-index="15" id="slide-collections">
+<section class="slide slide-chapter" data-chapter-id="collections" data-slide-index="16" id="slide-collections">
 <aside class="sidebar">
 <nav>
 <div class="sidebar-brand">
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
-<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">172 · 19 ch.</div></div>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
 </div>
 <ul class="sidebar-list">
 <li>
@@ -13530,8 +14374,18 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -13541,7 +14395,7 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -13551,7 +14405,7 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -13561,7 +14415,7 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -13571,7 +14425,7 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -13581,7 +14435,7 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -13590,7 +14444,7 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -13607,9 +14461,9 @@ Contraindre le type, par exemple avec `&lt;T extends Number&gt;`, puis convertir
 <div class="chapter-header">
 <div class="chapter-line" style="background:linear-gradient(to right,transparent,#0ea5e980,transparent)"></div>
 <div class="chapter-header-inner">
-<div class="chapter-num" style="color:#0ea5e9;text-shadow:0 0 30px #0ea5e940">15</div>
+<div class="chapter-num" style="color:#0ea5e9;text-shadow:0 0 30px #0ea5e940">16</div>
 <div class="chapter-meta">
-<div class="chapter-badge-row"><span class="chapter-badge" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e910">Chapitre 15</span><span class="chapter-count">42 fiches</span></div>
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e910">Chapitre 16</span><span class="chapter-count">42 fiches</span></div>
 <h2 class="chapter-title" style="color:#0ea5e9">Collections</h2>
 <p class="chapter-subtitle">List · Set · Map · Queue · Deque</p>
 </div>
@@ -15018,12 +15872,12 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </section>
 </div>
 </section>
-<section class="slide slide-chapter" data-chapter-id="comparable-comparator" data-slide-index="16" id="slide-comparable-comparator">
+<section class="slide slide-chapter" data-chapter-id="comparable-comparator" data-slide-index="17" id="slide-comparable-comparator">
 <aside class="sidebar">
 <nav>
 <div class="sidebar-brand">
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
-<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">172 · 19 ch.</div></div>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
 </div>
 <ul class="sidebar-list">
 <li>
@@ -15157,8 +16011,18 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -15168,7 +16032,7 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -15178,7 +16042,7 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -15188,7 +16052,7 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -15198,7 +16062,7 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -15208,7 +16072,7 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -15217,7 +16081,7 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -15234,9 +16098,9 @@ Tableau → `Arrays`. Collection (`List`, `Set`, etc.) → `Collections`.
 <div class="chapter-header">
 <div class="chapter-line" style="background:linear-gradient(to right,transparent,#f59e0b80,transparent)"></div>
 <div class="chapter-header-inner">
-<div class="chapter-num" style="color:#f59e0b;text-shadow:0 0 30px #f59e0b40">16</div>
+<div class="chapter-num" style="color:#f59e0b;text-shadow:0 0 30px #f59e0b40">17</div>
 <div class="chapter-meta">
-<div class="chapter-badge-row"><span class="chapter-badge" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b10">Chapitre 16</span><span class="chapter-count">8 fiches</span></div>
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b10">Chapitre 17</span><span class="chapter-count">8 fiches</span></div>
 <h2 class="chapter-title" style="color:#f59e0b">Comparable / Comparator</h2>
 <p class="chapter-subtitle">Trier et comparer des objets</p>
 </div>
@@ -15508,12 +16372,12 @@ La règle de tri devient interchangeable et réutilisable.
 </section>
 </div>
 </section>
-<section class="slide slide-chapter" data-chapter-id="files" data-slide-index="17" id="slide-files">
+<section class="slide slide-chapter" data-chapter-id="files" data-slide-index="18" id="slide-files">
 <aside class="sidebar">
 <nav>
 <div class="sidebar-brand">
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
-<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">172 · 19 ch.</div></div>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
 </div>
 <ul class="sidebar-list">
 <li>
@@ -15647,8 +16511,18 @@ La règle de tri devient interchangeable et réutilisable.
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -15658,7 +16532,7 @@ La règle de tri devient interchangeable et réutilisable.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -15668,7 +16542,7 @@ La règle de tri devient interchangeable et réutilisable.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -15678,7 +16552,7 @@ La règle de tri devient interchangeable et réutilisable.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -15688,7 +16562,7 @@ La règle de tri devient interchangeable et réutilisable.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -15698,7 +16572,7 @@ La règle de tri devient interchangeable et réutilisable.
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -15707,7 +16581,7 @@ La règle de tri devient interchangeable et réutilisable.
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -15724,9 +16598,9 @@ La règle de tri devient interchangeable et réutilisable.
 <div class="chapter-header">
 <div class="chapter-line" style="background:linear-gradient(to right,transparent,#ea580c80,transparent)"></div>
 <div class="chapter-header-inner">
-<div class="chapter-num" style="color:#ea580c;text-shadow:0 0 30px #ea580c40">17</div>
+<div class="chapter-num" style="color:#ea580c;text-shadow:0 0 30px #ea580c40">18</div>
 <div class="chapter-meta">
-<div class="chapter-badge-row"><span class="chapter-badge" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c10">Chapitre 17</span><span class="chapter-count">10 fiches</span></div>
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c10">Chapitre 18</span><span class="chapter-count">10 fiches</span></div>
 <h2 class="chapter-title" style="color:#ea580c">Files</h2>
 <p class="chapter-subtitle">Path · Files · Reader · Writer</p>
 </div>
@@ -16073,12 +16947,12 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </section>
 </div>
 </section>
-<section class="slide slide-chapter" data-chapter-id="enum" data-slide-index="18" id="slide-enum">
+<section class="slide slide-chapter" data-chapter-id="enum" data-slide-index="19" id="slide-enum">
 <aside class="sidebar">
 <nav>
 <div class="sidebar-brand">
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
-<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">172 · 19 ch.</div></div>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
 </div>
 <ul class="sidebar-list">
 <li>
@@ -16212,8 +17086,18 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -16223,7 +17107,7 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -16233,7 +17117,7 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -16243,7 +17127,7 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -16253,7 +17137,7 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -16263,7 +17147,7 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -16272,7 +17156,7 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -16289,9 +17173,9 @@ L’API `Files` simplifie beaucoup les opérations courantes sur les fichiers. `
 <div class="chapter-header">
 <div class="chapter-line" style="background:linear-gradient(to right,transparent,#a855f780,transparent)"></div>
 <div class="chapter-header-inner">
-<div class="chapter-num" style="color:#a855f7;text-shadow:0 0 30px #a855f740">18</div>
+<div class="chapter-num" style="color:#a855f7;text-shadow:0 0 30px #a855f740">19</div>
 <div class="chapter-meta">
-<div class="chapter-badge-row"><span class="chapter-badge" style="color:#a855f7;border-color:#a855f740;background-color:#a855f710">Chapitre 18</span><span class="chapter-count">4 fiches</span></div>
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#a855f7;border-color:#a855f740;background-color:#a855f710">Chapitre 19</span><span class="chapter-count">4 fiches</span></div>
 <h2 class="chapter-title" style="color:#a855f7">enum</h2>
 <p class="chapter-subtitle">Types énumérés et valeurs fixes</p>
 </div>
@@ -16433,12 +17317,12 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </section>
 </div>
 </section>
-<section class="slide slide-chapter" data-chapter-id="date-time" data-slide-index="19" id="slide-date-time">
+<section class="slide slide-chapter" data-chapter-id="date-time" data-slide-index="20" id="slide-date-time">
 <aside class="sidebar">
 <nav>
 <div class="sidebar-brand">
 <svg fill="none" height="16" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4-4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
-<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">172 · 19 ch.</div></div>
+<div><div class="sidebar-brand-text">Java Torréfié</div><div class="sidebar-brand-sub">175 · 21 ch.</div></div>
 </div>
 <ul class="sidebar-list">
 <li>
@@ -16572,8 +17456,18 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -16583,7 +17477,7 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -16593,7 +17487,7 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -16603,7 +17497,7 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -16613,7 +17507,7 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -16623,7 +17517,7 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -16632,7 +17526,7 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 </a>
 </li><li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -16649,9 +17543,9 @@ Un enum peut contenir des attributs, un constructeur et des méthodes, comme une
 <div class="chapter-header">
 <div class="chapter-line" style="background:linear-gradient(to right,transparent,#10b98180,transparent)"></div>
 <div class="chapter-header-inner">
-<div class="chapter-num" style="color:#10b981;text-shadow:0 0 30px #10b98140">19</div>
+<div class="chapter-num" style="color:#10b981;text-shadow:0 0 30px #10b98140">20</div>
 <div class="chapter-meta">
-<div class="chapter-badge-row"><span class="chapter-badge" style="color:#10b981;border-color:#10b98140;background-color:#10b98110">Chapitre 19</span><span class="chapter-count">6 fiches</span></div>
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#10b981;border-color:#10b98140;background-color:#10b98110">Chapitre 20</span><span class="chapter-count">6 fiches</span></div>
 <h2 class="chapter-title" style="color:#10b981">Date &amp; Time</h2>
 <p class="chapter-subtitle">LocalDate · LocalTime · LocalDateTime · formatage</p>
 </div>
@@ -16863,7 +17757,7 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </div>
 </section>
 
-<section class="slide slide-chapter" data-chapter-id="c-vs-java" data-slide-index="20" id="slide-c-vs-java">
+<section class="slide slide-chapter" data-chapter-id="c-vs-java" data-slide-index="21" id="slide-c-vs-java">
 <aside class="sidebar">
 <nav>
 <div class="sidebar-brand">
@@ -17002,8 +17896,18 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </a>
 </li>
 <li>
-<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<a class="sidebar-item" data-chapter="objects" href="#objects" style="--accent:#7c3aed">
 <span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">14</span>
+<div class="sidebar-text">
+<div class="sidebar-title">java.util.Objects</div>
+<div class="sidebar-count">3 fiches</div>
+</div>
+<svg class="sidebar-chevron" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="color:#7c3aed" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</li>
+<li>
+<a class="sidebar-item" data-chapter="generics" href="#generics" style="--accent:#7c3aed">
+<span class="sidebar-num" style="color:#7c3aed;border-color:#7c3aed40;background-color:#7c3aed08">15</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Generics</div>
 <div class="sidebar-count">17 fiches</div>
@@ -17013,7 +17917,7 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </li>
 <li>
 <a class="sidebar-item" data-chapter="collections" href="#collections" style="--accent:#0ea5e9">
-<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">15</span>
+<span class="sidebar-num" style="color:#0ea5e9;border-color:#0ea5e940;background-color:#0ea5e908">16</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Collections</div>
 <div class="sidebar-count">42 fiches</div>
@@ -17023,7 +17927,7 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </li>
 <li>
 <a class="sidebar-item" data-chapter="comparable-comparator" href="#comparable-comparator" style="--accent:#f59e0b">
-<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">16</span>
+<span class="sidebar-num" style="color:#f59e0b;border-color:#f59e0b40;background-color:#f59e0b08">17</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Comparable / Comparator</div>
 <div class="sidebar-count">8 fiches</div>
@@ -17033,7 +17937,7 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </li>
 <li>
 <a class="sidebar-item" data-chapter="files" href="#files" style="--accent:#ea580c">
-<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">17</span>
+<span class="sidebar-num" style="color:#ea580c;border-color:#ea580c40;background-color:#ea580c08">18</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Files</div>
 <div class="sidebar-count">10 fiches</div>
@@ -17043,7 +17947,7 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </li>
 <li>
 <a class="sidebar-item" data-chapter="enum" href="#enum" style="--accent:#a855f7">
-<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">18</span>
+<span class="sidebar-num" style="color:#a855f7;border-color:#a855f740;background-color:#a855f708">19</span>
 <div class="sidebar-text">
 <div class="sidebar-title">enum</div>
 <div class="sidebar-count">4 fiches</div>
@@ -17053,7 +17957,7 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </li>
 <li>
 <a class="sidebar-item" data-chapter="date-time" href="#date-time" style="--accent:#10b981">
-<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">19</span>
+<span class="sidebar-num" style="color:#10b981;border-color:#10b98140;background-color:#10b98108">20</span>
 <div class="sidebar-text">
 <div class="sidebar-title">Date &amp; Time</div>
 <div class="sidebar-count">6 fiches</div>
@@ -17063,7 +17967,7 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 </li>
 <li>
 <a class="sidebar-item" data-chapter="c-vs-java" href="#c-vs-java" style="--accent:#06b6d4">
-<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">20</span>
+<span class="sidebar-num" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d408">21</span>
 <div class="sidebar-text">
 <div class="sidebar-title">C vs Java</div>
 <div class="sidebar-count">10 fiches</div>
@@ -17080,9 +17984,9 @@ Choisir la classe qui correspond exactement à l’information manipulée plutô
 <div class="chapter-header">
 <div class="chapter-line" style="background:linear-gradient(to right,transparent,#06b6d480,transparent)"></div>
 <div class="chapter-header-inner">
-<div class="chapter-num" style="color:#06b6d4;text-shadow:0 0 30px #06b6d440">20</div>
+<div class="chapter-num" style="color:#06b6d4;text-shadow:0 0 30px #06b6d440">21</div>
 <div class="chapter-meta">
-<div class="chapter-badge-row"><span class="chapter-badge" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d415">Chapitre 20</span><span class="chapter-count">10 fiches</span></div>
+<div class="chapter-badge-row"><span class="chapter-badge" style="color:#06b6d4;border-color:#06b6d440;background-color:#06b6d415">Chapitre 21</span><span class="chapter-count">10 fiches</span></div>
 <h2 class="chapter-title" style="color:#06b6d4">C vs Java</h2>
 <p class="chapter-subtitle">Deux langages, deux philosophies — 7 notions pour passer de l'un à l'autre</p>
 </div>
@@ -17477,7 +18381,7 @@ Associe chaque langage à une image forte :
 <svg fill="none" height="20" stroke="#f59e0b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" x2="6" y1="2" y2="4"></line><line x1="10" x2="10" y1="2" y2="4"></line><line x1="14" x2="14" y1="2" y2="4"></line></svg>
 <span>Java <span style="color:#f59e0b">Torréfié</span></span>
 </div>
-<p class="footer-desc">172 fiches Java organisées en 19 chapitres thématiques, avec un thème visuel inspiré de la torréfaction du café — clin d'œil à l'origine de Java.</p>
+<p class="footer-desc">175 fiches Java organisées en 21 chapitres thématiques, avec un thème visuel inspiré de la torréfaction du café — clin d'œil à l'origine de Java.</p>
 </div>
 <div class="footer-col">
 <h4 class="footer-heading">Chapitres</h4>

@@ -242,10 +242,15 @@ function toggleFiche(btn) {
 
 // === IMAGE TOGGLE ===
 function toggleImage(btn) {
-  const card = btn.closest('.fiche-card');
-  const imgWrap = card.querySelector('.fiche-image-wrap');
+  // Une fiche peut contenir une sous-fiche visuelle (ex. Suite-E2).
+  // On cible d'abord le bloc local afin que son bouton agisse
+  // uniquement sur l'image de cette sous-fiche.
+  const localScope = btn.closest('.fiche-inline-continuation') || btn.closest('.fiche-card');
+  const imgWrap = localScope ? localScope.querySelector('.fiche-image-wrap') : null;
+  if (!imgWrap) return;
+
   const isHidden = getComputedStyle(imgWrap).display === 'none';
-  
+
   if (isHidden) {
     imgWrap.style.display = 'block';
     btn.innerHTML = '🖼 Masquer l\'image';
